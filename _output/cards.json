@@ -1,0 +1,986 @@
+[
+  {
+    "id": 1,
+    "labels": [
+      "in progress",
+      "app"
+    ],
+    "title": "Epic: Core Application"
+  },
+  {
+    "childOf": 3,
+    "id": 2,
+    "labels": [
+      "to-do",
+      "heroku"
+    ],
+    "title": "Deploy your application to Heroku"
+  },
+  {
+    "childOf": 1,
+    "id": 3,
+    "labels": [
+      "in progress",
+      "navigation"
+    ],
+    "title": "Epic: Navigation"
+  },
+  {
+    "childOf": 3,
+    "id": 4,
+    "labels": [
+      "to-do",
+      "navigation",
+      "visitor"
+    ],
+    "title": "Visitor Navigation"
+  },
+  {
+    "childOf": 3,
+    "dependsOn": [
+      4
+    ],
+    "id": 5,
+    "labels": [
+      "to-do",
+      "navigation",
+      "user"
+    ],
+    "title": "User Navigation"
+  },
+  {
+    "childOf": 3,
+    "dependsOn": [
+      5
+    ],
+    "id": 6,
+    "labels": [
+      "to-do",
+      "navigation",
+      "merchant"
+    ],
+    "title": "Merchant Navigation"
+  },
+  {
+    "childOf": 3,
+    "dependsOn": [
+      5
+    ],
+    "id": 7,
+    "labels": [
+      "to-do",
+      "navigation",
+      "admin"
+    ],
+    "title": "Admin Navigation"
+  },
+  {
+    "dependsOn": [
+      4,
+      5,
+      6
+    ],
+    "id": 8,
+    "labels": [
+      "to-do",
+      "navigation",
+      "profile",
+      "dashboard",
+      "user",
+      "merchant"
+    ],
+    "title": "Users cannot navigate to certain paths"
+  },
+  {
+    "childOf": 1,
+    "dependsOn": [
+      3
+    ],
+    "id": 9,
+    "labels": [
+      "in progress",
+      "user",
+      "registration"
+    ],
+    "title": "Epic: User Registration"
+  },
+  {
+    "childOf": 9,
+    "dependsOn": [
+      4
+    ],
+    "id": 10,
+    "labels": [
+      "to-do",
+      "visitor",
+      "user"
+    ],
+    "title": "User Registration"
+  },
+  {
+    "childOf": 9,
+    "dependsOn": [
+      10
+    ],
+    "id": 11,
+    "labels": [
+      "to-do",
+      "visitor",
+      "user"
+    ],
+    "title": "User Registration Missing Details"
+  },
+  {
+    "childOf": 9,
+    "dependsOn": [
+      10
+    ],
+    "id": 12,
+    "labels": [
+      "to-do",
+      "user",
+      "registration"
+    ],
+    "title": "Registration Email must be unique"
+  },
+  {
+    "childOf": 1,
+    "id": 13,
+    "labels": [
+      "in progress",
+      "admin",
+      "user"
+    ],
+    "title": "Epic: Login, Logout"
+  },
+  {
+    "childOf": 13,
+    "dependsOn": [
+      9
+    ],
+    "id": 14,
+    "labels": [
+      "to-do",
+      "session",
+      "user"
+    ],
+    "title": "User can Login"
+  },
+  {
+    "childOf": 13,
+    "dependsOn": [
+      14
+    ],
+    "id": 15,
+    "labels": [
+      "to-do",
+      "session",
+      "user"
+    ],
+    "title": "User cannot log in with bad credentials"
+  },
+  {
+    "childOf": 13,
+    "id": 16,
+    "labels": [
+      "to-do",
+      "session",
+      "user"
+    ],
+    "title": "Users who are logged in already are redirected"
+  },
+  {
+    "childOf": 13,
+    "id": 17,
+    "labels": [
+      "to-do",
+      "session",
+      "user"
+    ],
+    "title": "User can log out"
+  },
+  {
+    "childOf": 1,
+    "dependsOn": [
+      4
+    ],
+    "id": 18,
+    "labels": [
+      "in progress",
+      "items"
+    ],
+    "title": "Epic: Items Catalog"
+  },
+  {
+    "childOf": 18,
+    "dependsOn": [
+      4
+    ],
+    "id": 19,
+    "labels": [
+      "to-do",
+      "items"
+    ],
+    "title": "Items Index Page"
+  },
+  {
+    "childOf": 18,
+    "dependsOn": [
+      19
+    ],
+    "id": 20,
+    "labels": [
+      "to-do",
+      "items",
+      "statistics"
+    ],
+    "title": "Items Index Page Statistics"
+  },
+  {
+    "childOf": 18,
+    "dependsOn": [
+      19
+    ],
+    "id": 21,
+    "labels": [
+      "to-do",
+      "items"
+    ],
+    "title": "Item Show Page"
+  },
+  {
+    "childOf": 1,
+    "dependsOn": [
+      9
+    ],
+    "id": 22,
+    "labels": [
+      "in progress",
+      "user",
+      "profile"
+    ],
+    "title": "Epic: User Profile Show Page"
+  },
+  {
+    "childOf": 22,
+    "id": 23,
+    "labels": [
+      "to-do",
+      "user",
+      "profile"
+    ],
+    "title": "User Profile Show Page"
+  },
+  {
+    "childOf": 22,
+    "dependsOn": [
+      23,
+      41
+    ],
+    "id": 24,
+    "labels": [
+      "to-do",
+      "user",
+      "profile",
+      "orders"
+    ],
+    "title": "User Profile displays Orders"
+  },
+  {
+    "childOf": 22,
+    "dependsOn": [
+      23
+    ],
+    "id": 25,
+    "labels": [
+      "to-do",
+      "user",
+      "profile"
+    ],
+    "title": "User Can Edit their Profile Data"
+  },
+  {
+    "childOf": 22,
+    "dependsOn": [
+      23,
+      25
+    ],
+    "id": 26,
+    "labels": [
+      "to-do",
+      "user",
+      "profile"
+    ],
+    "title": "User Editing Profile Data must have unique Email address"
+  },
+  {
+    "childOf": 22,
+    "dependsOn": [
+      7,
+      75
+    ],
+    "id": 27,
+    "labels": [
+      "to-do",
+      "admin",
+      "user",
+      "profile"
+    ],
+    "title": "Admin User Profile Page"
+  },
+  {
+    "childOf": 22,
+    "dependsOn": [
+      7,
+      27
+    ],
+    "id": 28,
+    "labels": [
+      "to-do",
+      "admin",
+      "user",
+      "profile"
+    ],
+    "title": "Admin can edit a user's profile data"
+  },
+  {
+    "childOf": 22,
+    "dependsOn": [
+      27,
+      41
+    ],
+    "id": 29,
+    "labels": [
+      "to-do",
+      "admin",
+      "user",
+      "profile",
+      "orders"
+    ],
+    "title": "Admin Sees User's Orders"
+  },
+  {
+    "childOf": 22,
+    "dependsOn": [
+      27,
+      51
+    ],
+    "id": 30,
+    "labels": [
+      "to-do",
+      "admin",
+      "user",
+      "merchant"
+    ],
+    "title": "Admin can make a User a Merchant"
+  },
+  {
+    "childOf": 22,
+    "dependsOn": [
+      27,
+      51
+    ],
+    "id": 31,
+    "labels": [
+      "to-do",
+      "admin",
+      "user",
+      "merchant"
+    ],
+    "title": "Admin is redirected from User profile to Merchant dashboard"
+  },
+  {
+    "childOf": 1,
+    "dependsOn": [
+      4
+    ],
+    "id": 32,
+    "labels": [
+      "in progress",
+      "cart"
+    ],
+    "title": "Epic: Shopping Cart and Checkout"
+  },
+  {
+    "childOf": 32,
+    "dependsOn": [
+      21
+    ],
+    "id": 33,
+    "labels": [
+      "to-do",
+      "items",
+      "cart"
+    ],
+    "title": "User adds an item to the cart"
+  },
+  {
+    "childOf": 32,
+    "dependsOn": [
+      4
+    ],
+    "id": 34,
+    "labels": [
+      "to-do",
+      "items",
+      "cart"
+    ],
+    "title": "User views their cart show page with items in the cart"
+  },
+  {
+    "childOf": 32,
+    "dependsOn": [
+      4
+    ],
+    "id": 35,
+    "labels": [
+      "to-do",
+      "cart"
+    ],
+    "title": "User views their cart show page but it's empty"
+  },
+  {
+    "childOf": 32,
+    "dependsOn": [
+      34
+    ],
+    "id": 36,
+    "labels": [
+      "to-do",
+      "items",
+      "cart"
+    ],
+    "title": "User can empty a cart that has items"
+  },
+  {
+    "childOf": 32,
+    "dependsOn": [
+      34
+    ],
+    "id": 37,
+    "labels": [
+      "to-do",
+      "items",
+      "cart"
+    ],
+    "title": "User can manipulate quantities in their cart"
+  },
+  {
+    "childOf": 32,
+    "dependsOn": [
+      34,
+      4,
+      10,
+      14
+    ],
+    "id": 38,
+    "labels": [
+      "to-do",
+      "cart"
+    ],
+    "title": "Visitors must register or log in to check out"
+  },
+  {
+    "childOf": 32,
+    "dependsOn": [
+      34,
+      24
+    ],
+    "id": 39,
+    "labels": [
+      "to-do",
+      "cart"
+    ],
+    "title": "Registered users can check out"
+  },
+  {
+    "childOf": 1,
+    "id": 40,
+    "labels": [
+      "in progress",
+      "orders",
+      "user"
+    ],
+    "title": "Epic: User Order Show Page"
+  },
+  {
+    "childOf": 40,
+    "dependsOn": [
+      22
+    ],
+    "id": 41,
+    "labels": [
+      "to-do",
+      "user",
+      "order"
+    ],
+    "title": "User views an Order Show Page"
+  },
+  {
+    "childOf": 40,
+    "dependsOn": [
+      29
+    ],
+    "id": 42,
+    "labels": [
+      "to-do",
+      "admin",
+      "user",
+      "order"
+    ],
+    "title": "Admin views a User's Order Show Page"
+  },
+  {
+    "childOf": 40,
+    "dependsOn": [
+      22,
+      41
+    ],
+    "id": 43,
+    "labels": [
+      "to-do",
+      "user",
+      "orders"
+    ],
+    "title": "User cancels an order"
+  },
+  {
+    "childOf": 40,
+    "dependsOn": [
+      22,
+      41
+    ],
+    "id": 44,
+    "labels": [
+      "to-do",
+      "admin",
+      "user",
+      "orders"
+    ],
+    "title": "Admin cancels a user's order"
+  },
+  {
+    "childOf": 1,
+    "dependsOn": [
+      72
+    ],
+    "id": 45,
+    "labels": [
+      "to-do",
+      "merchant",
+      "user",
+      "orders"
+    ],
+    "title": "All Merchants fulfill items on an order"
+  },
+  {
+    "childOf": 1,
+    "dependsOn": [
+      9
+    ],
+    "id": 46,
+    "labels": [
+      "in progress",
+      "merchant",
+      "dashboard"
+    ],
+    "title": "Epic: Merchant Dashboard"
+  },
+  {
+    "childOf": 46,
+    "dependsOn": [
+      9,
+      54
+    ],
+    "id": 47,
+    "labels": [
+      "to-do",
+      "merchant",
+      "dashboard"
+    ],
+    "title": "Merchant Dashboard Show Page"
+  },
+  {
+    "childOf": 46,
+    "dependsOn": [
+      71
+    ],
+    "id": 48,
+    "labels": [
+      "to-do",
+      "merchant",
+      "dashboard",
+      "orders"
+    ],
+    "title": "Merchant Dashboard displays Orders"
+  },
+  {
+    "childOf": 46,
+    "id": 49,
+    "labels": [
+      "to-do",
+      "merchant",
+      "statistics"
+    ],
+    "title": "Merchant Dashboard Statistics"
+  },
+  {
+    "childOf": 46,
+    "dependsOn": [
+      23
+    ],
+    "id": 50,
+    "labels": [
+      "to-do",
+      "merchant",
+      "items"
+    ],
+    "title": "Merchant's Items index page"
+  },
+  {
+    "childOf": 46,
+    "id": 51,
+    "labels": [
+      "to-do",
+      "admin",
+      "merchant",
+      "dashboard"
+    ],
+    "title": "Admin can see a merchant's dashboard"
+  },
+  {
+    "childOf": 46,
+    "id": 52,
+    "labels": [
+      "to-do",
+      "admin",
+      "merchant",
+      "user"
+    ],
+    "title": "Admin can downgrade a merchant to regular user"
+  },
+  {
+    "childOf": 46,
+    "id": 53,
+    "labels": [
+      "to-do",
+      "admin",
+      "user",
+      "merchant"
+    ],
+    "title": "Admin is redirected from Merchant Dashboard to User profile"
+  },
+  {
+    "childOf": 1,
+    "dependsOn": [
+      4
+    ],
+    "id": 54,
+    "labels": [
+      "in progress",
+      "merchant"
+    ],
+    "title": "Epic: Merchant Index Page"
+  },
+  {
+    "childOf": 54,
+    "dependsOn": [
+      4
+    ],
+    "id": 55,
+    "labels": [
+      "to-do",
+      "merchant"
+    ],
+    "title": "Merchant Index Page"
+  },
+  {
+    "childOf": 54,
+    "dependsOn": [
+      55
+    ],
+    "id": 56,
+    "labels": [
+      "to-do",
+      "merchant",
+      "statistics"
+    ],
+    "title": "Merchant Index Page Statistics"
+  },
+  {
+    "childOf": 54,
+    "dependsOn": [
+      55
+    ],
+    "id": 57,
+    "labels": [
+      "to-do",
+      "admin",
+      "merchant"
+    ],
+    "title": "Admin visits Merchant Index Page"
+  },
+  {
+    "childOf": 54,
+    "dependsOn": [
+      57
+    ],
+    "id": 58,
+    "labels": [
+      "to-do",
+      "admin",
+      "merchant"
+    ],
+    "title": "Admin disables a merchant account"
+  },
+  {
+    "childOf": 54,
+    "dependsOn": [
+      57
+    ],
+    "id": 59,
+    "labels": [
+      "to-do",
+      "admin",
+      "merchant"
+    ],
+    "title": "Admin enables a merchant account"
+  },
+  {
+    "childOf": 1,
+    "dependsOn": [
+      47
+    ],
+    "id": 60,
+    "labels": [
+      "in progress",
+      "merchant",
+      "items"
+    ],
+    "title": "Epic: Merchant Items"
+  },
+  {
+    "childOf": 60,
+    "dependsOn": [
+      47
+    ],
+    "id": 61,
+    "labels": [
+      "to-do",
+      "merchant",
+      "items"
+    ],
+    "title": "Merchant Items Index Page"
+  },
+  {
+    "childOf": 60,
+    "dependsOn": [
+      61
+    ],
+    "id": 62,
+    "labels": [
+      "to-do",
+      "merchant",
+      "items"
+    ],
+    "title": "Merchant disables an item"
+  },
+  {
+    "childOf": 60,
+    "dependsOn": [
+      61
+    ],
+    "id": 63,
+    "labels": [
+      "to-do",
+      "merchant",
+      "items"
+    ],
+    "title": "Merchant enables an item"
+  },
+  {
+    "childOf": 60,
+    "dependsOn": [
+      61
+    ],
+    "id": 64,
+    "labels": [
+      "to-do",
+      "merchant",
+      "items"
+    ],
+    "title": "Merchant deletes an item"
+  },
+  {
+    "childOf": 60,
+    "dependsOn": [
+      61
+    ],
+    "id": 65,
+    "labels": [
+      "to-do",
+      "merchant",
+      "items"
+    ],
+    "title": "Merchant adds an item"
+  },
+  {
+    "childOf": 60,
+    "dependsOn": [
+      65
+    ],
+    "id": 66,
+    "labels": [
+      "to-do",
+      "merchant",
+      "items"
+    ],
+    "title": "Merchant cannot add an item if details are bad/missing"
+  },
+  {
+    "childOf": 60,
+    "dependsOn": [
+      65
+    ],
+    "id": 67,
+    "labels": [
+      "to-do",
+      "merchant",
+      "items"
+    ],
+    "title": "Merchant edits an item"
+  },
+  {
+    "childOf": 60,
+    "dependsOn": [
+      67
+    ],
+    "id": 68,
+    "labels": [
+      "to-do",
+      "merchant",
+      "items"
+    ],
+    "title": "Merchant cannot edit an item if details are bad/missing"
+  },
+  {
+    "childOf": 60,
+    "dependsOn": [
+      61,
+      65,
+      67
+    ],
+    "id": 69,
+    "labels": [
+      "to-do",
+      "merchant",
+      "items"
+    ],
+    "title": "Admin can manage items on behalf of a merchant"
+  },
+  {
+    "childOf": 1,
+    "dependsOn": [
+      47
+    ],
+    "id": 70,
+    "labels": [
+      "in progress",
+      "merchant",
+      "items",
+      "orders"
+    ],
+    "title": "Epic: Merchant Order Fulfillment"
+  },
+  {
+    "childOf": 70,
+    "dependsOn": [
+      48
+    ],
+    "id": 71,
+    "labels": [
+      "to-do",
+      "merchant",
+      "user",
+      "orders"
+    ],
+    "title": "Merchant sees an order show page"
+  },
+  {
+    "childOf": 70,
+    "dependsOn": [
+      71
+    ],
+    "id": 72,
+    "labels": [
+      "to-do",
+      "merchant",
+      "user",
+      "orders"
+    ],
+    "title": "Merchant fulfills part of an order"
+  },
+  {
+    "childOf": 40,
+    "dependsOn": [
+      48
+    ],
+    "id": 73,
+    "labels": [
+      "to-do",
+      "merchant",
+      "user",
+      "orders"
+    ],
+    "title": "Merchant cannot fulfill an order due to lack of inventory"
+  },
+  {
+    "childOf": 1,
+    "id": 74,
+    "labels": [
+      "in progress",
+      "admin",
+      "user"
+    ],
+    "title": "Epic: Admin User Index Page"
+  },
+  {
+    "childOf": 74,
+    "dependsOn": [
+      7
+    ],
+    "id": 75,
+    "labels": [
+      "to-do",
+      "admin",
+      "user"
+    ],
+    "title": "Admin User Index Page"
+  },
+  {
+    "childOf": 74,
+    "dependsOn": [
+      75
+    ],
+    "id": 76,
+    "labels": [
+      "to-do",
+      "admin",
+      "user"
+    ],
+    "title": "Admin disables a user account"
+  },
+  {
+    "childOf": 74,
+    "dependsOn": [
+      75
+    ],
+    "id": 77,
+    "labels": [
+      "to-do",
+      "admin",
+      "user"
+    ],
+    "title": "Admin enables a user account"
+  }
+]
