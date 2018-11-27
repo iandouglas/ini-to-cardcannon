@@ -1,9 +1,29 @@
 import json
 import os
+import sys
 import re
 from shutil import copy2
 import ConfigParser
 from collections import OrderedDict
+
+if len(sys.argv) < 2:
+    print 'no project given'
+    sys.exit()
+
+project = sys.argv[1]
+try:
+    os.mkdir('./_output/{}'.format(project))
+except OSError as e:
+    if e.errno != 17:
+        print e
+        sys.exit()
+try:
+    os.mkdir('./_output/{}/cards'.format(project))
+except OSError as e:
+    if e.errno != 17:
+        print e
+        sys.exit()
+
 
 def ConfigSectionMap(section):
     dict1 = {}
@@ -27,7 +47,7 @@ EXCLUDED = [
   '_output/cards',
 ]
 
-with open('story-checklist.md') as x: CHECKLIST = x.read()
+with open('{}/story-checklist.md'.format(project)) as x: CHECKLIST = x.read()
 
 story_output = []
 
@@ -46,11 +66,11 @@ def get_id_by_slug(slug):
         deps.append(stories[story_slug]['id'])
     return deps
 
-path = "./"
+path = './{}/'.format(project)
 for filename in os.listdir(path):
     if filename not in EXCLUDED and re.match(".+.ini", filename):
         config = ConfigParser.RawConfigParser()
-        config.read(filename)
+        config.read('{}/{}'.format(project,filename))
         for section_name in config.sections():
             print(section_name)
             bits = config.items(section_name)
@@ -78,18 +98,23 @@ for filename in os.listdir(path):
                     'text': story['story_text'],
                 })
 
-markdown_output = open('stories.md', 'w')
+markdown_output = open('_output/{}/stories.md'.format(project), 'w')
 id = 1
+first_epic = False;
 for story in story_output:
     if 'Epic:' in story['title']:
-        markdown_output.write("---\n\n{}\n\n".format(story['text']))
+        if not first_epic:
+            markdown_output.write("{}\n\n".format(story['text']))
+            first_epic = True
+        else:
+            markdown_output.write("---\n\n{}\n\n".format(story['text']))
     else:
         markdown_output.write("```\n[ ] done\n\nUser Story {}\n{}\n\n{}\n```\n\n".format(id, story['title'], story['text']))
         id += 1
 markdown_output.close()
 
 print('outputing all stories per Waffle Cannon')
-with open("_output/cards.json", 'w') as f:
+with open('_output/{}/cards.json'.format(project), 'w') as f:
     waffle_stories = []
     for story in stories:
         story = stories[story]
@@ -102,7 +127,7 @@ with open("_output/cards.json", 'w') as f:
             del story['depends_on']
         if 'slug' in story:
             del story['slug']
-        with open('_output/cards/{}.md'.format(story['id']), 'w') as f2:
+        with open('_output/{}/cards/{}.md'.format(project, story['id']), 'w') as f2:
             if 'Epic:' in story['title']:
                 f2.write("{}".format(story['story_text']))
             else:
