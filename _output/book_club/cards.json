@@ -168,7 +168,7 @@
     "title": "Epic: Adding new Books and Reviews"
   },
   {
-    "childOf": 13,
+    "childOf": 16,
     "id": 17,
     "labels": [
       "to-do",
@@ -177,7 +177,7 @@
     "title": "Add a New Book to the System"
   },
   {
-    "childOf": 13,
+    "childOf": 16,
     "id": 18,
     "labels": [
       "to-do",
@@ -196,7 +196,7 @@
     "title": "Epic: Author Show Page"
   },
   {
-    "childOf": 13,
+    "childOf": 19,
     "dependsOn": [
       17
     ],
@@ -209,7 +209,7 @@
     "title": "Author Show Page"
   },
   {
-    "childOf": 13,
+    "childOf": 19,
     "dependsOn": [
       20,
       18
@@ -305,7 +305,6 @@
     "title": "User can delete an author"
   },
   {
-    "childOf": 1,
     "id": 29,
     "labels": [
       "in progress"
