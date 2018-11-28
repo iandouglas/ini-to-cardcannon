@@ -12,12 +12,11 @@ module.exports = app => {
     // app.log(issueTitle);
 
     const triggerPattern = /^bootstrap ([a-zA-Z0-9-_])/gi;
-    if triggerPattern.test(issueTitle) {
-      project = issueTitle.replace(triggerPattern, '$1');
+    var newIssues = [];
+    if (triggerPattern.test(issueTitle)) {
+      var project = issueTitle.replace(triggerPattern, '$1');
 
-      var newIssues = []
-
-      app.log('bootstrap running...')
+      app.log('bootstrap running for project '+project+'...')
 
       //move bootstrap issue into progress
       const updateIssue = context.repo({
@@ -38,7 +37,7 @@ module.exports = app => {
       app.log(newIssues);
 
 //       //update cards with epic and dependency relationships
-      await updateCardRelationships(project, context, cardData, newIssues)
+      await updateCardRelationships(context, cardData, newIssues)
 
       //close bootstrap issue
       const closeIssue = context.repo({
@@ -60,11 +59,11 @@ async function createCards(project, context, cardData) {
   let newIssues = []
 
   for (const card of cardData) {
-    const response = await (createIssue(context, card))
+    const response = await (createIssue(project, context, card))
     newIssues.push({id: card.id, issueNumber: response.data.number})
   }
 
-  return newIssues
+  return newIssues;
 }
 
 async function updateCardRelationships(context, cardData, newIssues) {
