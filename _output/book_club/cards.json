@@ -8,7 +8,7 @@
     "title": "Epic: Core Application"
   },
   {
-    "childOf": 3,
+    "childOf": 1,
     "id": 2,
     "labels": [
       "to-do",
@@ -38,165 +38,322 @@
   {
     "childOf": 3,
     "dependsOn": [
-      4
+      14
     ],
     "id": 5,
     "labels": [
       "to-do",
-      "navigation",
-      "user"
+      "navigation"
     ],
-    "title": "User Navigation"
+    "title": "All book titles are links to a show page"
   },
   {
     "childOf": 3,
     "dependsOn": [
-      5
+      20
     ],
     "id": 6,
     "labels": [
       "to-do",
-      "navigation",
-      "merchant"
+      "navigation"
     ],
-    "title": "Merchant Navigation"
+    "title": "All author names are links to a show page"
   },
   {
     "childOf": 3,
     "dependsOn": [
-      5
+      23
     ],
     "id": 7,
     "labels": [
       "to-do",
-      "navigation",
-      "admin"
+      "navigation"
     ],
-    "title": "Admin Navigation"
-  },
-  {
-    "dependsOn": [
-      4,
-      5,
-      6
-    ],
-    "id": 8,
-    "labels": [
-      "to-do",
-      "navigation",
-      "profile",
-      "dashboard",
-      "user",
-      "merchant"
-    ],
-    "title": "Users cannot navigate to certain paths"
+    "title": "All user names are links to a show page"
   },
   {
     "childOf": 1,
-    "dependsOn": [
-      3
-    ],
-    "id": 9,
+    "id": 8,
     "labels": [
       "in progress",
-      "user",
-      "registration"
+      "books"
     ],
-    "title": "Epic: User Registration"
+    "title": "Epic: Book Index Page"
   },
   {
-    "childOf": 9,
+    "childOf": 8,
+    "id": 9,
+    "labels": [
+      "to-do",
+      "books"
+    ],
+    "title": "Book Index Page"
+  },
+  {
+    "childOf": 8,
     "dependsOn": [
-      4
+      9
     ],
     "id": 10,
     "labels": [
       "to-do",
-      "visitor",
-      "user"
+      "books"
     ],
-    "title": "User Registration"
+    "title": "Book Index Page shows Average Rating"
   },
   {
-    "childOf": 9,
+    "childOf": 8,
     "dependsOn": [
-      10
+      9
     ],
     "id": 11,
     "labels": [
       "to-do",
-      "visitor",
-      "user"
+      "books"
     ],
-    "title": "User Registration Missing Details"
+    "title": "Book Index Page can be Sorted"
   },
   {
-    "childOf": 9,
+    "childOf": 8,
     "dependsOn": [
-      10
+      9
     ],
     "id": 12,
     "labels": [
       "to-do",
-      "user",
-      "registration"
+      "books",
+      "statistics"
     ],
-    "title": "Registration Email must be unique"
+    "title": "Book Index Page shows Statistics"
   },
   {
     "childOf": 1,
-    "id": 13,
-    "labels": [
-      "in progress",
-      "admin",
-      "user"
-    ],
-    "title": "Epic: Login, Logout"
-  },
-  {
-    "childOf": 13,
     "dependsOn": [
       9
     ],
+    "id": 13,
+    "labels": [
+      "in progress",
+      "books"
+    ],
+    "title": "Epic: Book Show Page"
+  },
+  {
+    "childOf": 13,
     "id": 14,
     "labels": [
       "to-do",
-      "session",
-      "user"
+      "books"
     ],
-    "title": "User can Login"
+    "title": "Book Show Page"
   },
   {
     "childOf": 13,
-    "dependsOn": [
-      14
-    ],
     "id": 15,
     "labels": [
       "to-do",
-      "session",
-      "user"
+      "books",
+      "statistics"
     ],
-    "title": "User cannot log in with bad credentials"
+    "title": "Book Show Page has Statistics"
   },
   {
-    "childOf": 13,
+    "childOf": 1,
     "id": 16,
     "labels": [
-      "to-do",
-      "session",
-      "user"
+      "in progress",
+      "books",
+      "reviews"
     ],
-    "title": "Users who are logged in already are redirected"
+    "title": "Epic: Adding new Books and Reviews"
   },
   {
     "childOf": 13,
     "id": 17,
     "labels": [
       "to-do",
-      "session",
-      "user"
+      "books"
     ],
-    "title": "User can log out"
+    "title": "Add a New Book to the System"
+  },
+  {
+    "childOf": 13,
+    "id": 18,
+    "labels": [
+      "to-do",
+      "books",
+      "reviews"
+    ],
+    "title": "Add a Review for a Book"
+  },
+  {
+    "childOf": 1,
+    "id": 19,
+    "labels": [
+      "in progress",
+      "authors"
+    ],
+    "title": "Epic: Author Show Page"
+  },
+  {
+    "childOf": 13,
+    "dependsOn": [
+      17
+    ],
+    "id": 20,
+    "labels": [
+      "to-do",
+      "authors",
+      "books"
+    ],
+    "title": "Author Show Page"
+  },
+  {
+    "childOf": 13,
+    "dependsOn": [
+      20,
+      18
+    ],
+    "id": 21,
+    "labels": [
+      "to-do",
+      "authors",
+      "books",
+      "reviews"
+    ],
+    "title": "Author Show Page displays top review for each book"
+  },
+  {
+    "childOf": 1,
+    "id": 22,
+    "labels": [
+      "in progress",
+      "reviews"
+    ],
+    "title": "Epic: User Show Page"
+  },
+  {
+    "childOf": 22,
+    "dependsOn": [
+      18
+    ],
+    "id": 23,
+    "labels": [
+      "to-do",
+      "reviews"
+    ],
+    "title": "User Show Page"
+  },
+  {
+    "childOf": 22,
+    "dependsOn": [
+      23
+    ],
+    "id": 24,
+    "labels": [
+      "to-do",
+      "reviews"
+    ],
+    "title": "User Show Page can sort reviews"
+  },
+  {
+    "childOf": 1,
+    "id": 25,
+    "labels": [
+      "in progress",
+      "reviews",
+      "books",
+      "authors"
+    ],
+    "title": "Epic: Deleting Content"
+  },
+  {
+    "childOf": 25,
+    "dependsOn": [
+      18,
+      23
+    ],
+    "id": 26,
+    "labels": [
+      "to-do",
+      "reviews"
+    ],
+    "title": "User can delete a book review"
+  },
+  {
+    "childOf": 25,
+    "dependsOn": [
+      14
+    ],
+    "id": 27,
+    "labels": [
+      "to-do",
+      "books"
+    ],
+    "title": "User can delete a book"
+  },
+  {
+    "childOf": 25,
+    "dependsOn": [
+      20
+    ],
+    "id": 28,
+    "labels": [
+      "to-do",
+      "authors"
+    ],
+    "title": "User can delete an author"
+  },
+  {
+    "childOf": 1,
+    "id": 29,
+    "labels": [
+      "in progress"
+    ],
+    "title": "Epic: Extensions"
+  },
+  {
+    "childOf": 29,
+    "dependsOn": [
+      23
+    ],
+    "id": 30,
+    "labels": [
+      "to-do",
+      "reviews"
+    ],
+    "title": "User reviews are sortable"
+  },
+  {
+    "childOf": 29,
+    "dependsOn": [
+      18
+    ],
+    "id": 31,
+    "labels": [
+      "to-do",
+      "reviews"
+    ],
+    "title": "Review usernames are unique for a given book"
+  },
+  {
+    "childOf": 29,
+    "dependsOn": [
+      9
+    ],
+    "id": 32,
+    "labels": [
+      "to-do",
+      "reviews"
+    ],
+    "title": "Book Index Page statistics shows top authors"
+  },
+  {
+    "childOf": 29,
+    "id": 33,
+    "labels": [
+      "to-do"
+    ],
+    "title": "Spend any extra time on HTML/CSS"
   }
 ]
