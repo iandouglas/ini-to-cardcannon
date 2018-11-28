@@ -91,8 +91,8 @@ for filename in os.listdir(path):
                     story['depends_on'] = config.get(section_name, 'depends_on')
                 # print(story)
                 story['story_text'] = config.get(section_name, 'story_text')
-                if '!!!' in story['story_text']:
-                    story['story_text'] = story['story_text'].replace('!!!', '')
+                if 'NEWLINE' in story['story_text']:
+                    story['story_text'] = story['story_text'].replace('NEWLINE', '')
                 stories[section_name] = story
 
                 story_output.append({
