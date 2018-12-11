@@ -67,7 +67,6 @@ async function createCards(project, context, cardData) {
 }
 
 async function updateCardRelationships(context, cardData, newIssues) {
-
   for (const card of cardData) {
     console.log('updaterelationship, card.id: ' + card.id)
     const newIssue = newIssues.find(issue => issue.id === card.id)

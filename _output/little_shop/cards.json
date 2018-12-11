@@ -506,7 +506,7 @@
   {
     "childOf": 40,
     "dependsOn": [
-      22
+      23
     ],
     "id": 41,
     "labels": [
@@ -533,7 +533,7 @@
   {
     "childOf": 40,
     "dependsOn": [
-      22,
+      23,
       41
     ],
     "id": 43,
@@ -547,7 +547,7 @@
   {
     "childOf": 40,
     "dependsOn": [
-      22,
+      23,
       41
     ],
     "id": 44,
@@ -603,7 +603,7 @@
   {
     "childOf": 46,
     "dependsOn": [
-      71
+      47
     ],
     "id": 48,
     "labels": [
@@ -616,6 +616,9 @@
   },
   {
     "childOf": 46,
+    "dependsOn": [
+      47
+    ],
     "id": 49,
     "labels": [
       "to-do",

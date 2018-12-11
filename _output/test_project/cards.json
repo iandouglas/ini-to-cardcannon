@@ -1,0 +1,45 @@
+[
+  {
+    "id": 1,
+    "labels": [
+      "in progress",
+      "app"
+    ],
+    "title": "Epic: Core Application"
+  },
+  {
+    "childOf": 1,
+    "id": 2,
+    "labels": [
+      "to-do",
+      "label-1"
+    ],
+    "title": "User Story 1, Great story title 1"
+  },
+  {
+    "childOf": 1,
+    "dependsOn": [
+      2
+    ],
+    "id": 3,
+    "labels": [
+      "to-do",
+      "label-1",
+      "label-2"
+    ],
+    "title": "User Story 2, Great story title 2"
+  },
+  {
+    "childOf": 1,
+    "dependsOn": [
+      2,
+      3
+    ],
+    "id": 4,
+    "labels": [
+      "to-do",
+      "label-3"
+    ],
+    "title": "User Story 3, Great story title 3"
+  }
+]
