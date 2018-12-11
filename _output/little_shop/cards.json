@@ -14,7 +14,7 @@
       "to-do",
       "heroku"
     ],
-    "title": "Deploy your application to Heroku"
+    "title": "User Story 1, Deploy your application to Heroku"
   },
   {
     "childOf": 1,
@@ -33,7 +33,7 @@
       "navigation",
       "visitor"
     ],
-    "title": "Visitor Navigation"
+    "title": "User Story 2, Visitor Navigation"
   },
   {
     "childOf": 3,
@@ -46,7 +46,7 @@
       "navigation",
       "user"
     ],
-    "title": "User Navigation"
+    "title": "User Story 3, User Navigation"
   },
   {
     "childOf": 3,
@@ -59,7 +59,7 @@
       "navigation",
       "merchant"
     ],
-    "title": "Merchant Navigation"
+    "title": "User Story 4, Merchant Navigation"
   },
   {
     "childOf": 3,
@@ -72,7 +72,7 @@
       "navigation",
       "admin"
     ],
-    "title": "Admin Navigation"
+    "title": "User Story 5, Admin Navigation"
   },
   {
     "dependsOn": [
@@ -89,7 +89,7 @@
       "user",
       "merchant"
     ],
-    "title": "Users cannot navigate to certain paths"
+    "title": "User Story 6, Users cannot navigate to certain paths"
   },
   {
     "childOf": 1,
@@ -115,7 +115,7 @@
       "visitor",
       "user"
     ],
-    "title": "User Registration"
+    "title": "User Story 7, User Registration"
   },
   {
     "childOf": 9,
@@ -128,7 +128,7 @@
       "visitor",
       "user"
     ],
-    "title": "User Registration Missing Details"
+    "title": "User Story 8, User Registration Missing Details"
   },
   {
     "childOf": 9,
@@ -141,7 +141,7 @@
       "user",
       "registration"
     ],
-    "title": "Registration Email must be unique"
+    "title": "User Story 9, Registration Email must be unique"
   },
   {
     "childOf": 1,
@@ -164,7 +164,7 @@
       "session",
       "user"
     ],
-    "title": "User can Login"
+    "title": "User Story 10, User can Login"
   },
   {
     "childOf": 13,
@@ -177,7 +177,7 @@
       "session",
       "user"
     ],
-    "title": "User cannot log in with bad credentials"
+    "title": "User Story 11, User cannot log in with bad credentials"
   },
   {
     "childOf": 13,
@@ -187,7 +187,7 @@
       "session",
       "user"
     ],
-    "title": "Users who are logged in already are redirected"
+    "title": "User Story 12, Users who are logged in already are redirected"
   },
   {
     "childOf": 13,
@@ -197,7 +197,7 @@
       "session",
       "user"
     ],
-    "title": "User can log out"
+    "title": "User Story 13, User can log out"
   },
   {
     "childOf": 1,
@@ -221,7 +221,7 @@
       "to-do",
       "items"
     ],
-    "title": "Items Index Page"
+    "title": "User Story 14, Items Index Page"
   },
   {
     "childOf": 18,
@@ -234,7 +234,7 @@
       "items",
       "statistics"
     ],
-    "title": "Items Index Page Statistics"
+    "title": "User Story 15, Items Index Page Statistics"
   },
   {
     "childOf": 18,
@@ -246,7 +246,7 @@
       "to-do",
       "items"
     ],
-    "title": "Item Show Page"
+    "title": "User Story 16, Item Show Page"
   },
   {
     "childOf": 1,
@@ -269,7 +269,7 @@
       "user",
       "profile"
     ],
-    "title": "User Profile Show Page"
+    "title": "User Story 17, User Profile Show Page"
   },
   {
     "childOf": 22,
@@ -284,7 +284,7 @@
       "profile",
       "orders"
     ],
-    "title": "User Profile displays Orders"
+    "title": "User Story 18, User Profile displays Orders"
   },
   {
     "childOf": 22,
@@ -297,7 +297,7 @@
       "user",
       "profile"
     ],
-    "title": "User Can Edit their Profile Data"
+    "title": "User Story 19, User Can Edit their Profile Data"
   },
   {
     "childOf": 22,
@@ -311,7 +311,7 @@
       "user",
       "profile"
     ],
-    "title": "User Editing Profile Data must have unique Email address"
+    "title": "User Story 20, User Editing Profile Data must have unique Email address"
   },
   {
     "childOf": 22,
@@ -326,7 +326,7 @@
       "user",
       "profile"
     ],
-    "title": "Admin User Profile Page"
+    "title": "User Story 21, Admin User Profile Page"
   },
   {
     "childOf": 22,
@@ -341,7 +341,7 @@
       "user",
       "profile"
     ],
-    "title": "Admin can edit a user's profile data"
+    "title": "User Story 22, Admin can edit a user's profile data"
   },
   {
     "childOf": 22,
@@ -357,7 +357,7 @@
       "profile",
       "orders"
     ],
-    "title": "Admin Sees User's Orders"
+    "title": "User Story 23, Admin Sees User's Orders"
   },
   {
     "childOf": 22,
@@ -372,7 +372,7 @@
       "user",
       "merchant"
     ],
-    "title": "Admin can make a User a Merchant"
+    "title": "User Story 24, Admin can make a User a Merchant"
   },
   {
     "childOf": 22,
@@ -387,7 +387,7 @@
       "user",
       "merchant"
     ],
-    "title": "Admin is redirected from User profile to Merchant dashboard"
+    "title": "User Story 25, Admin is redirected from User profile to Merchant dashboard"
   },
   {
     "childOf": 1,
@@ -412,7 +412,7 @@
       "items",
       "cart"
     ],
-    "title": "User adds an item to the cart"
+    "title": "User Story 26, User adds an item to the cart"
   },
   {
     "childOf": 32,
@@ -425,7 +425,7 @@
       "items",
       "cart"
     ],
-    "title": "User views their cart show page with items in the cart"
+    "title": "User Story 27, User views their cart show page with items in the cart"
   },
   {
     "childOf": 32,
@@ -437,7 +437,7 @@
       "to-do",
       "cart"
     ],
-    "title": "User views their cart show page but it's empty"
+    "title": "User Story 28, User views their cart show page but it's empty"
   },
   {
     "childOf": 32,
@@ -450,7 +450,7 @@
       "items",
       "cart"
     ],
-    "title": "User can empty a cart that has items"
+    "title": "User Story 29, User can empty a cart that has items"
   },
   {
     "childOf": 32,
@@ -463,7 +463,7 @@
       "items",
       "cart"
     ],
-    "title": "User can manipulate quantities in their cart"
+    "title": "User Story 30, User can manipulate quantities in their cart"
   },
   {
     "childOf": 32,
@@ -478,7 +478,7 @@
       "to-do",
       "cart"
     ],
-    "title": "Visitors must register or log in to check out"
+    "title": "User Story 31, Visitors must register or log in to check out"
   },
   {
     "childOf": 32,
@@ -491,7 +491,7 @@
       "to-do",
       "cart"
     ],
-    "title": "Registered users can check out"
+    "title": "User Story 32, Registered users can check out"
   },
   {
     "childOf": 1,
@@ -514,7 +514,7 @@
       "user",
       "order"
     ],
-    "title": "User views an Order Show Page"
+    "title": "User Story 33, User views an Order Show Page"
   },
   {
     "childOf": 40,
@@ -528,7 +528,7 @@
       "user",
       "order"
     ],
-    "title": "Admin views a User's Order Show Page"
+    "title": "User Story 34, Admin views a User's Order Show Page"
   },
   {
     "childOf": 40,
@@ -542,7 +542,7 @@
       "user",
       "orders"
     ],
-    "title": "User cancels an order"
+    "title": "User Story 35, User cancels an order"
   },
   {
     "childOf": 40,
@@ -557,7 +557,7 @@
       "user",
       "orders"
     ],
-    "title": "Admin cancels a user's order"
+    "title": "User Story 36, Admin cancels a user's order"
   },
   {
     "childOf": 1,
@@ -571,7 +571,7 @@
       "user",
       "orders"
     ],
-    "title": "All Merchants fulfill items on an order"
+    "title": "User Story 37, All Merchants fulfill items on an order"
   },
   {
     "childOf": 1,
@@ -598,7 +598,7 @@
       "merchant",
       "dashboard"
     ],
-    "title": "Merchant Dashboard Show Page"
+    "title": "User Story 38, Merchant Dashboard Show Page"
   },
   {
     "childOf": 46,
@@ -612,7 +612,7 @@
       "dashboard",
       "orders"
     ],
-    "title": "Merchant Dashboard displays Orders"
+    "title": "User Story 39, Merchant Dashboard displays Orders"
   },
   {
     "childOf": 46,
@@ -622,7 +622,7 @@
       "merchant",
       "statistics"
     ],
-    "title": "Merchant Dashboard Statistics"
+    "title": "User Story 40, Merchant Dashboard Statistics"
   },
   {
     "childOf": 46,
@@ -635,7 +635,7 @@
       "merchant",
       "items"
     ],
-    "title": "Merchant's Items index page"
+    "title": "User Story 41, Merchant's Items index page"
   },
   {
     "childOf": 46,
@@ -646,7 +646,7 @@
       "merchant",
       "dashboard"
     ],
-    "title": "Admin can see a merchant's dashboard"
+    "title": "User Story 42, Admin can see a merchant's dashboard"
   },
   {
     "childOf": 46,
@@ -657,7 +657,7 @@
       "merchant",
       "user"
     ],
-    "title": "Admin can downgrade a merchant to regular user"
+    "title": "User Story 43, Admin can downgrade a merchant to regular user"
   },
   {
     "childOf": 46,
@@ -668,7 +668,7 @@
       "user",
       "merchant"
     ],
-    "title": "Admin is redirected from Merchant Dashboard to User profile"
+    "title": "User Story 44, Admin is redirected from Merchant Dashboard to User profile"
   },
   {
     "childOf": 1,
@@ -692,7 +692,7 @@
       "to-do",
       "merchant"
     ],
-    "title": "Merchant Index Page"
+    "title": "User Story 45, Merchant Index Page"
   },
   {
     "childOf": 54,
@@ -705,7 +705,7 @@
       "merchant",
       "statistics"
     ],
-    "title": "Merchant Index Page Statistics"
+    "title": "User Story 46, Merchant Index Page Statistics"
   },
   {
     "childOf": 54,
@@ -718,7 +718,7 @@
       "admin",
       "merchant"
     ],
-    "title": "Admin visits Merchant Index Page"
+    "title": "User Story 47, Admin visits Merchant Index Page"
   },
   {
     "childOf": 54,
@@ -731,7 +731,7 @@
       "admin",
       "merchant"
     ],
-    "title": "Admin disables a merchant account"
+    "title": "User Story 48, Admin disables a merchant account"
   },
   {
     "childOf": 54,
@@ -744,7 +744,7 @@
       "admin",
       "merchant"
     ],
-    "title": "Admin enables a merchant account"
+    "title": "User Story 49, Admin enables a merchant account"
   },
   {
     "childOf": 1,
@@ -770,7 +770,7 @@
       "merchant",
       "items"
     ],
-    "title": "Merchant Items Index Page"
+    "title": "User Story 50, Merchant Items Index Page"
   },
   {
     "childOf": 60,
@@ -783,7 +783,7 @@
       "merchant",
       "items"
     ],
-    "title": "Merchant disables an item"
+    "title": "User Story 51, Merchant disables an item"
   },
   {
     "childOf": 60,
@@ -796,7 +796,7 @@
       "merchant",
       "items"
     ],
-    "title": "Merchant enables an item"
+    "title": "User Story 52, Merchant enables an item"
   },
   {
     "childOf": 60,
@@ -809,7 +809,7 @@
       "merchant",
       "items"
     ],
-    "title": "Merchant deletes an item"
+    "title": "User Story 53, Merchant deletes an item"
   },
   {
     "childOf": 60,
@@ -822,7 +822,7 @@
       "merchant",
       "items"
     ],
-    "title": "Merchant adds an item"
+    "title": "User Story 54, Merchant adds an item"
   },
   {
     "childOf": 60,
@@ -835,7 +835,7 @@
       "merchant",
       "items"
     ],
-    "title": "Merchant cannot add an item if details are bad/missing"
+    "title": "User Story 55, Merchant cannot add an item if details are bad/missing"
   },
   {
     "childOf": 60,
@@ -848,7 +848,7 @@
       "merchant",
       "items"
     ],
-    "title": "Merchant edits an item"
+    "title": "User Story 56, Merchant edits an item"
   },
   {
     "childOf": 60,
@@ -861,7 +861,7 @@
       "merchant",
       "items"
     ],
-    "title": "Merchant cannot edit an item if details are bad/missing"
+    "title": "User Story 57, Merchant cannot edit an item if details are bad/missing"
   },
   {
     "childOf": 60,
@@ -876,7 +876,7 @@
       "merchant",
       "items"
     ],
-    "title": "Admin can manage items on behalf of a merchant"
+    "title": "User Story 58, Admin can manage items on behalf of a merchant"
   },
   {
     "childOf": 1,
@@ -904,7 +904,7 @@
       "user",
       "orders"
     ],
-    "title": "Merchant sees an order show page"
+    "title": "User Story 59, Merchant sees an order show page"
   },
   {
     "childOf": 70,
@@ -918,7 +918,7 @@
       "user",
       "orders"
     ],
-    "title": "Merchant fulfills part of an order"
+    "title": "User Story 60, Merchant fulfills part of an order"
   },
   {
     "childOf": 40,
@@ -932,7 +932,7 @@
       "user",
       "orders"
     ],
-    "title": "Merchant cannot fulfill an order due to lack of inventory"
+    "title": "User Story 61, Merchant cannot fulfill an order due to lack of inventory"
   },
   {
     "childOf": 1,
@@ -955,7 +955,7 @@
       "admin",
       "user"
     ],
-    "title": "Admin User Index Page"
+    "title": "User Story 62, Admin User Index Page"
   },
   {
     "childOf": 74,
@@ -968,7 +968,7 @@
       "admin",
       "user"
     ],
-    "title": "Admin disables a user account"
+    "title": "User Story 63, Admin disables a user account"
   },
   {
     "childOf": 74,
@@ -981,6 +981,6 @@
       "admin",
       "user"
     ],
-    "title": "Admin enables a user account"
+    "title": "User Story 64, Admin enables a user account"
   }
 ]

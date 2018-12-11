@@ -66,6 +66,7 @@ def get_id_by_slug(slug):
         deps.append(stories[story_slug]['id'])
     return deps
 
+id = 1
 path = './{}/'.format(project)
 for filename in os.listdir(path):
     if filename not in EXCLUDED and re.match(".+.ini", filename):
@@ -95,13 +96,16 @@ for filename in os.listdir(path):
                     story['story_text'] = story['story_text'].replace('NEWLINE', '')
                 stories[section_name] = story
 
+                if 'Epic:' not in story['title']:
+                    story['title'] = "User Story {}, {}".format(id, story['title'])
+                    id += 1
+
                 story_output.append({
                     'title': story['title'],
                     'text': story['story_text'],
                 })
 
 markdown_output = open('_output/{}/stories.md'.format(project), 'w')
-id = 1
 first_epic = False;
 for story in story_output:
     if 'Epic:' in story['title']:
@@ -111,8 +115,7 @@ for story in story_output:
         else:
             markdown_output.write("---\n\n{}\n\n".format(story['text']))
     else:
-        markdown_output.write("```\n[ ] done\n\nUser Story {}\n{}\n\n{}\n```\n\n".format(id, story['title'], story['text']))
-        id += 1
+        markdown_output.write("```\n[ ] done\n\n{}\n\n{}\n```\n\n".format(story['title'], story['text']))
 markdown_output.close()
 
 print('outputing all stories per Waffle Cannon')

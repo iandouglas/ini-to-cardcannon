@@ -35,8 +35,7 @@ These user stories may be worked on in any order that makes sense to your team. 
 ```
 [ ] done
 
-User Story 1
-Deploy your application to Heroku
+User Story 1, Deploy your application to Heroku
 
 As a visitor or user of the site
 I will perform all user stories
@@ -63,8 +62,7 @@ You will need to set up some basic routing and empty controller actions and empt
 ```
 [ ] done
 
-User Story 2
-Visitor Navigation
+User Story 2, Visitor Navigation
 
 As a visitor
 I see a navigation bar
@@ -76,8 +74,7 @@ This navigation bar includes links for the following:
 ```
 [ ] done
 
-User Story 3
-All book titles are links to a show page
+User Story 3, All book titles are links to a show page
 
 As a visitor
 With the exception of a book's show page,
@@ -88,8 +85,7 @@ I can click on the book title to go to that book's show page.
 ```
 [ ] done
 
-User Story 4
-All author names are links to a show page
+User Story 4, All author names are links to a show page
 
 As a visitor
 With the exception of an author's show page,
@@ -100,8 +96,7 @@ I can click on the name to go to that author's show page.
 ```
 [ ] done
 
-User Story 5
-All user names are links to a show page
+User Story 5, All user names are links to a show page
 
 As a visitor
 With the exception of a user's show page,
@@ -119,8 +114,7 @@ Set up a minimum of 12 books to appear on this page.
 ```
 [ ] done
 
-User Story 6
-Book Index Page
+User Story 6, Book Index Page
 
 As a Visitor,
 When I visit a book index page,
@@ -132,8 +126,7 @@ pages in the book, and the year it was published.
 ```
 [ ] done
 
-User Story 7
-Book Index Page shows Average Rating
+User Story 7, Book Index Page shows Average Rating
 
 As a Visitor,
 When I visit the book index page,
@@ -144,8 +137,7 @@ And I also see the total number of reviews for the book.
 ```
 [ ] done
 
-User Story 8
-Book Index Page can be Sorted
+User Story 8, Book Index Page can be Sorted
 
 As a Visitor,
 When I visit the book index page,
@@ -161,8 +153,7 @@ I should see one link each to sort the books by the following criteria:
 ```
 [ ] done
 
-User Story 9
-Book Index Page shows Statistics
+User Story 9, Book Index Page shows Statistics
 
 As a Visitor,
 As a Visitor,
@@ -182,8 +173,7 @@ A book's "show" page will display information about a particular book.
 ```
 [ ] done
 
-User Story 10
-Book Show Page
+User Story 10, Book Show Page
 
 As a Visitor,
 When I visit a book's show page,
@@ -198,8 +188,7 @@ must be present for each review.
 ```
 [ ] done
 
-User Story 11
-Book Show Page has Statistics
+User Story 11, Book Show Page has Statistics
 
 As a Visitor,
 When I visit a book's show page,
@@ -218,8 +207,7 @@ Our application will need a way for users to input new books, and to leave revie
 ```
 [ ] done
 
-User Story 12
-Add a New Book to the System
+User Story 12, Add a New Book to the System
 
 As a Visitor,
 When I visit the book index page,
@@ -241,8 +229,7 @@ Author Names should be unique within the system.
 ```
 [ ] done
 
-User Story 13
-Add a Review for a Book
+User Story 13, Add a Review for a Book
 
 As a Visitor,
 When I visit a book's show page
@@ -269,8 +256,7 @@ This "show" page will display information about a specific author.
 ```
 [ ] done
 
-User Story 14
-Author Show Page
+User Story 14, Author Show Page
 
 As a Visitor,
 When I visit an author's show page
@@ -284,8 +270,7 @@ Each book should show a list of any other authors
 ```
 [ ] done
 
-User Story 15
-Author Show Page displays top review for each book
+User Story 15, Author Show Page displays top review for each book
 
 As a Visitor,
 When I visit an author's show page,
@@ -303,8 +288,7 @@ This "show" page will display information about a visitor who has left reviews f
 ```
 [ ] done
 
-User Story 16
-User Show Page
+User Story 16, User Show Page
 
 As a Visitor,
 When I click on a user's name for any book review
@@ -316,8 +300,7 @@ user has written.
 ```
 [ ] done
 
-User Story 17
-User Show Page can sort reviews
+User Story 17, User Show Page can sort reviews
 
 As a Visitor,
 When I visit a user's show page
@@ -335,8 +318,7 @@ Visitors will have the ability to delete content in our application, such as rev
 ```
 [ ] done
 
-User Story 18
-User can delete a book review
+User Story 18, User can delete a book review
 
 As a Visitor,
 When I visit a user's show page,
@@ -348,8 +330,7 @@ Then I should no longer see that review.
 ```
 [ ] done
 
-User Story 19
-User can delete a book
+User Story 19, User can delete a book
 
 As a Visitor,
 When I visit a book's show page,
@@ -363,8 +344,7 @@ no longer see this book listed.
 ```
 [ ] done
 
-User Story 20
-User can delete an author
+User Story 20, User can delete an author
 
 As a Visitor,
 When I visit an author's show page,
@@ -386,8 +366,7 @@ If you finish the user stories above before the deadline, you are expected to at
 ```
 [ ] done
 
-User Story 21
-User reviews are sortable
+User Story 21, User reviews are sortable
 
 As a Visitor,
 When I visit a user's show page to see their reviews,
@@ -399,8 +378,7 @@ I see additional links to sort their reviews in the following ways:
 ```
 [ ] done
 
-User Story 22
-Review usernames are unique for a given book
+User Story 22, Review usernames are unique for a given book
 
 As a Visitor,
 I should not be permitted to save a book review using a name
@@ -412,8 +390,7 @@ I've previously used to review a specific book.
 ```
 [ ] done
 
-User Story 23
-Book Index Page statistics shows top authors
+User Story 23, Book Index Page statistics shows top authors
 
 As a Visitor,
 When I visit the book index page,
@@ -425,8 +402,7 @@ I should also see three authors who have the highest-rated books
 ```
 [ ] done
 
-User Story 24
-Spend any extra time on HTML/CSS
+User Story 24, Spend any extra time on HTML/CSS
 
 As a Developer
 I will spend additional time on HTML layout and CSS styling

@@ -14,7 +14,7 @@
       "to-do",
       "heroku"
     ],
-    "title": "Deploy your application to Heroku"
+    "title": "User Story 1, Deploy your application to Heroku"
   },
   {
     "childOf": 1,
@@ -33,7 +33,7 @@
       "navigation",
       "visitor"
     ],
-    "title": "Visitor Navigation"
+    "title": "User Story 2, Visitor Navigation"
   },
   {
     "childOf": 3,
@@ -45,7 +45,7 @@
       "to-do",
       "navigation"
     ],
-    "title": "All book titles are links to a show page"
+    "title": "User Story 3, All book titles are links to a show page"
   },
   {
     "childOf": 3,
@@ -57,7 +57,7 @@
       "to-do",
       "navigation"
     ],
-    "title": "All author names are links to a show page"
+    "title": "User Story 4, All author names are links to a show page"
   },
   {
     "childOf": 3,
@@ -69,7 +69,7 @@
       "to-do",
       "navigation"
     ],
-    "title": "All user names are links to a show page"
+    "title": "User Story 5, All user names are links to a show page"
   },
   {
     "childOf": 1,
@@ -87,7 +87,7 @@
       "to-do",
       "books"
     ],
-    "title": "Book Index Page"
+    "title": "User Story 6, Book Index Page"
   },
   {
     "childOf": 8,
@@ -99,7 +99,7 @@
       "to-do",
       "books"
     ],
-    "title": "Book Index Page shows Average Rating"
+    "title": "User Story 7, Book Index Page shows Average Rating"
   },
   {
     "childOf": 8,
@@ -111,7 +111,7 @@
       "to-do",
       "books"
     ],
-    "title": "Book Index Page can be Sorted"
+    "title": "User Story 8, Book Index Page can be Sorted"
   },
   {
     "childOf": 8,
@@ -124,7 +124,7 @@
       "books",
       "statistics"
     ],
-    "title": "Book Index Page shows Statistics"
+    "title": "User Story 9, Book Index Page shows Statistics"
   },
   {
     "childOf": 1,
@@ -145,7 +145,7 @@
       "to-do",
       "books"
     ],
-    "title": "Book Show Page"
+    "title": "User Story 10, Book Show Page"
   },
   {
     "childOf": 13,
@@ -155,7 +155,7 @@
       "books",
       "statistics"
     ],
-    "title": "Book Show Page has Statistics"
+    "title": "User Story 11, Book Show Page has Statistics"
   },
   {
     "childOf": 1,
@@ -174,7 +174,7 @@
       "to-do",
       "books"
     ],
-    "title": "Add a New Book to the System"
+    "title": "User Story 12, Add a New Book to the System"
   },
   {
     "childOf": 16,
@@ -184,7 +184,7 @@
       "books",
       "reviews"
     ],
-    "title": "Add a Review for a Book"
+    "title": "User Story 13, Add a Review for a Book"
   },
   {
     "childOf": 1,
@@ -206,7 +206,7 @@
       "authors",
       "books"
     ],
-    "title": "Author Show Page"
+    "title": "User Story 14, Author Show Page"
   },
   {
     "childOf": 19,
@@ -221,7 +221,7 @@
       "books",
       "reviews"
     ],
-    "title": "Author Show Page displays top review for each book"
+    "title": "User Story 15, Author Show Page displays top review for each book"
   },
   {
     "childOf": 1,
@@ -242,7 +242,7 @@
       "to-do",
       "reviews"
     ],
-    "title": "User Show Page"
+    "title": "User Story 16, User Show Page"
   },
   {
     "childOf": 22,
@@ -254,7 +254,7 @@
       "to-do",
       "reviews"
     ],
-    "title": "User Show Page can sort reviews"
+    "title": "User Story 17, User Show Page can sort reviews"
   },
   {
     "childOf": 1,
@@ -278,7 +278,7 @@
       "to-do",
       "reviews"
     ],
-    "title": "User can delete a book review"
+    "title": "User Story 18, User can delete a book review"
   },
   {
     "childOf": 25,
@@ -290,7 +290,7 @@
       "to-do",
       "books"
     ],
-    "title": "User can delete a book"
+    "title": "User Story 19, User can delete a book"
   },
   {
     "childOf": 25,
@@ -302,7 +302,7 @@
       "to-do",
       "authors"
     ],
-    "title": "User can delete an author"
+    "title": "User Story 20, User can delete an author"
   },
   {
     "id": 29,
@@ -321,7 +321,7 @@
       "to-do",
       "reviews"
     ],
-    "title": "User reviews are sortable"
+    "title": "User Story 21, User reviews are sortable"
   },
   {
     "childOf": 29,
@@ -333,7 +333,7 @@
       "to-do",
       "reviews"
     ],
-    "title": "Review usernames are unique for a given book"
+    "title": "User Story 22, Review usernames are unique for a given book"
   },
   {
     "childOf": 29,
@@ -345,7 +345,7 @@
       "to-do",
       "reviews"
     ],
-    "title": "Book Index Page statistics shows top authors"
+    "title": "User Story 23, Book Index Page statistics shows top authors"
   },
   {
     "childOf": 29,
@@ -353,6 +353,6 @@
     "labels": [
       "to-do"
     ],
-    "title": "Spend any extra time on HTML/CSS"
+    "title": "User Story 24, Spend any extra time on HTML/CSS"
   }
 ]
