@@ -119,8 +119,11 @@ User Story 6, Book Index Page
 As a Visitor,
 When I visit a book index page,
 I see all book titles in the database.
-Each book entry on the page shows the author(s) and number of
-pages in the book, and the year it was published.
+Each book entry on the page shows:
+- the author(s) who wrote the book
+- the number of pages in the book
+- and the year it was published
+- a small thumbnail image of the book cover
 ```
 
 ```
@@ -177,9 +180,14 @@ User Story 10, Book Show Page
 
 As a Visitor,
 When I visit a book's show page,
-I see the book title, the author(s) and the number of pages in the book.
-I also see a list of reviews for that book.
+I see the following book information:
+- the book title
+- the author(s) who wrote the book
+- the number of pages in the book
+- the year the book was published
+- a large image of the book cover
 
+I also see a list of reviews for that book.
 Each review will have a title and user, a numeric rating
 from 1 to 5, and text for the review itself, and all content
 must be present for each review.
@@ -213,8 +221,14 @@ As a Visitor,
 When I visit the book index page,
 I see a link that allows me to add a new book.
 When I click that link, I am taken to a new book path.
-I can add a new book through a form, including the book's
-title, author(s), and number of pages in the book.
+I can fill in a form to add a new book.
+The form includes the following items:
+- title
+- year book was published
+- number of pages (0 or higher)
+- image of the book cover (optional, can be left blank)
+- a list of authors (see notes below)
+
 When I submit the form, I am taken to that book's show page.
 
 Book titles should be converted to Title Case before saving.
@@ -224,6 +238,7 @@ and each author will be added to the database.
 Authors added to the database should have their names converted
 to Title Case.
 Author Names should be unique within the system.
+If image field is left blank, a default image should be set.
 ```
 
 ```
@@ -237,14 +252,17 @@ I see a link to add a new review for this book.
 When I click on this link, I am taken to a new review path.
 On this new page, I see a form where I can enter:
 - a review title
-- my username as a string
+- a username as a string
 - a numeric rating that can only be a number from 1 to 5
 - some text for the review itself
 When the form is submitted, I should return to that book's
 show page and I should see my review text.
 
+Users are created if they do not already exist.
 User names should be converted to Title Case before saving.
 User names should be unique within the system.
+If user existed in the database, this review is associated
+with that user.
 ```
 
 ---
@@ -260,9 +278,13 @@ User Story 14, Author Show Page
 
 As a Visitor,
 When I visit an author's show page
-I see all book titles by that author
-Each book should show its year of publication
-Each book should show its number of pages
+I see all books by that author
+Each book should show:
+- the book title
+- the number of pages in the book
+- the year the book was published
+- a small image of the book cover
+
 Each book should show a list of any other authors
 (exclude this show page's author from that list)
 ```
@@ -274,7 +296,7 @@ User Story 15, Author Show Page displays top review for each book
 
 As a Visitor,
 When I visit an author's show page,
-Next to each book written by that author
+For each book written by that author
 I should see one of the highest rated reviews
 (review should contain the title, score, and user name)
 ```
@@ -293,8 +315,15 @@ User Story 16, User Show Page
 As a Visitor,
 When I click on a user's name for any book review
 I am taken to a show page for that user.
-I should see all reviews (title, rating and text) that this
+I should see all reviews that this
 user has written.
+Each review shows:
+- the title of the review
+- the description of the review
+- the rating of the review
+- the title of the book
+- the thumbnail image for the book
+- the date the review was written
 ```
 
 ```
@@ -360,13 +389,15 @@ If this author co-authored a book with someone else, that book should also be de
 ---
 
 ## Extensions
-If you finish the user stories above before the deadline, you are expected to attempt extension work. Extensions should not be attempted until all other work is complete.
+If you finish the user stories above before the deadline, you are expected to attempt extension work.
+
+Extensions should not be attempted until all other work is complete, and completion points for extensions will not be counted unless all other stories are done.
 
 
 ```
 [ ] done
 
-User Story 21, User reviews are sortable
+User Story 21, (EXTENSION 1/4) User reviews are sortable
 
 As a Visitor,
 When I visit a user's show page to see their reviews,
@@ -378,7 +409,7 @@ I see additional links to sort their reviews in the following ways:
 ```
 [ ] done
 
-User Story 22, Review usernames are unique for a given book
+User Story 22, (EXTENSION 2/4) Review usernames are unique for a given book
 
 As a Visitor,
 I should not be permitted to save a book review using a name
@@ -390,7 +421,7 @@ I've previously used to review a specific book.
 ```
 [ ] done
 
-User Story 23, Book Index Page statistics shows top authors
+User Story 23, (EXTENSION 3/4) Book Index Page statistics shows top authors
 
 As a Visitor,
 When I visit the book index page,
@@ -402,7 +433,7 @@ I should also see three authors who have the highest-rated books
 ```
 [ ] done
 
-User Story 24, Spend any extra time on HTML/CSS
+User Story 24, (EXTENSION 4/4) Spend any extra time on HTML/CSS
 
 As a Developer
 I will spend additional time on HTML layout and CSS styling

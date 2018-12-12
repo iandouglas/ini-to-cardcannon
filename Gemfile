@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
 gem "octokit", "~> 4.0"
-gem 'faraday'
+gem 'octopoller'
 gem 'pry'
 gem 'json'

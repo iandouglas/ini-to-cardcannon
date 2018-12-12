@@ -11,6 +11,7 @@ GEM
     multipart-post (2.0.0)
     octokit (4.13.0)
       sawyer (~> 0.8.0, >= 0.5.3)
+    octopoller (0.1.0)
     pry (0.12.2)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
@@ -23,9 +24,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  faraday
   json
   octokit (~> 4.0)
+  octopoller
   pry
 
 BUNDLED WITH

@@ -169,6 +169,9 @@
   },
   {
     "childOf": 16,
+    "dependsOn": [
+      14
+    ],
     "id": 17,
     "labels": [
       "to-do",
@@ -321,7 +324,7 @@
       "to-do",
       "reviews"
     ],
-    "title": "User Story 21, User reviews are sortable"
+    "title": "User Story 21, (EXTENSION 1/4) User reviews are sortable"
   },
   {
     "childOf": 29,
@@ -333,7 +336,7 @@
       "to-do",
       "reviews"
     ],
-    "title": "User Story 22, Review usernames are unique for a given book"
+    "title": "User Story 22, (EXTENSION 2/4) Review usernames are unique for a given book"
   },
   {
     "childOf": 29,
@@ -345,7 +348,7 @@
       "to-do",
       "reviews"
     ],
-    "title": "User Story 23, Book Index Page statistics shows top authors"
+    "title": "User Story 23, (EXTENSION 3/4) Book Index Page statistics shows top authors"
   },
   {
     "childOf": 29,
@@ -353,6 +356,6 @@
     "labels": [
       "to-do"
     ],
-    "title": "User Story 24, Spend any extra time on HTML/CSS"
+    "title": "User Story 24, (EXTENSION 4/4) Spend any extra time on HTML/CSS"
   }
 ]
