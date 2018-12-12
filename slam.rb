@@ -1,4 +1,5 @@
 require 'octokit'
+require 'octopoller'
 require 'json'
 require 'pry'
 
@@ -43,7 +44,15 @@ def create_cards(repo, card_data)
   card_data.each do |card|
     card_id = card['id']
     markdown = File.read("_output/#{@project}/cards/#{card_id}.md")
-    issue = @client.create_issue(repo, card['title'], markdown, {labels: card['labels']})
+    issue = nil
+    Octopoller.poll(wait: :exponentially, retries: 100) do
+      begin
+        issue = @client.create_issue(repo, card['title'], markdown, {labels: card['labels']})
+      rescue => e
+        puts "Rescued: #{e.inspect}"
+        :re_poll
+      end
+    end
     @card_tracker[card_id] = issue.number
     sleep 1
     print "."
@@ -70,7 +79,14 @@ def update_card_relationships(repo, cards, tracker)
         end
       end
 
-      @client.update_issue(repo, issue_number, issue.title, issue.body)
+      Octopoller.poll(wait: :exponentially, retries: 100) do
+        begin
+          @client.update_issue(repo, issue_number, issue.title, issue.body)
+        rescue => e
+          puts "Rescued: #{e.inspect}"
+          :re_poll
+        end
+      end
       sleep 1
       print "."
     end
@@ -117,8 +133,11 @@ puts "api calls remaining until reset: #{@client.rate_limit.remaining}"
 file = File.read("./_output/#{@project}/cards.json")
 cards = JSON.parse(file)
 # puts cards
+print "creation: "
 create_cards(repo, cards.reverse)
+puts "\napi calls remaining until reset: #{@client.rate_limit.remaining}"
+print "updates: "
 update_card_relationships(repo, cards, @card_tracker)
 
-puts "api calls remaining until reset: #{@client.rate_limit.remaining}"
+puts "\napi calls remaining until reset: #{@client.rate_limit.remaining}"
 puts "\ndone!"
