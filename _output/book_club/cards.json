@@ -11,7 +11,7 @@
     "childOf": 1,
     "id": 2,
     "labels": [
-      "to-do",
+      "to do",
       "heroku"
     ],
     "title": "User Story 1, Deploy your application to Heroku"
@@ -29,7 +29,7 @@
     "childOf": 3,
     "id": 4,
     "labels": [
-      "to-do",
+      "to do",
       "navigation",
       "visitor"
     ],
@@ -42,7 +42,7 @@
     ],
     "id": 5,
     "labels": [
-      "to-do",
+      "to do",
       "navigation"
     ],
     "title": "User Story 3, All book titles are links to a show page"
@@ -54,7 +54,7 @@
     ],
     "id": 6,
     "labels": [
-      "to-do",
+      "to do",
       "navigation"
     ],
     "title": "User Story 4, All author names are links to a show page"
@@ -66,7 +66,7 @@
     ],
     "id": 7,
     "labels": [
-      "to-do",
+      "to do",
       "navigation"
     ],
     "title": "User Story 5, All user names are links to a show page"
@@ -84,7 +84,7 @@
     "childOf": 8,
     "id": 9,
     "labels": [
-      "to-do",
+      "to do",
       "books"
     ],
     "title": "User Story 6, Book Index Page"
@@ -96,7 +96,7 @@
     ],
     "id": 10,
     "labels": [
-      "to-do",
+      "to do",
       "books"
     ],
     "title": "User Story 7, Book Index Page shows Average Rating"
@@ -108,7 +108,7 @@
     ],
     "id": 11,
     "labels": [
-      "to-do",
+      "to do",
       "books"
     ],
     "title": "User Story 8, Book Index Page can be Sorted"
@@ -120,7 +120,7 @@
     ],
     "id": 12,
     "labels": [
-      "to-do",
+      "to do",
       "books",
       "statistics"
     ],
@@ -142,7 +142,7 @@
     "childOf": 13,
     "id": 14,
     "labels": [
-      "to-do",
+      "to do",
       "books"
     ],
     "title": "User Story 10, Book Show Page"
@@ -151,7 +151,7 @@
     "childOf": 13,
     "id": 15,
     "labels": [
-      "to-do",
+      "to do",
       "books",
       "statistics"
     ],
@@ -174,7 +174,7 @@
     ],
     "id": 17,
     "labels": [
-      "to-do",
+      "to do",
       "books"
     ],
     "title": "User Story 12, Add a New Book to the System"
@@ -183,7 +183,7 @@
     "childOf": 16,
     "id": 18,
     "labels": [
-      "to-do",
+      "to do",
       "books",
       "reviews"
     ],
@@ -205,7 +205,7 @@
     ],
     "id": 20,
     "labels": [
-      "to-do",
+      "to do",
       "authors",
       "books"
     ],
@@ -219,7 +219,7 @@
     ],
     "id": 21,
     "labels": [
-      "to-do",
+      "to do",
       "authors",
       "books",
       "reviews"
@@ -242,7 +242,7 @@
     ],
     "id": 23,
     "labels": [
-      "to-do",
+      "to do",
       "reviews"
     ],
     "title": "User Story 16, User Show Page"
@@ -254,7 +254,7 @@
     ],
     "id": 24,
     "labels": [
-      "to-do",
+      "to do",
       "reviews"
     ],
     "title": "User Story 17, User Show Page can sort reviews"
@@ -278,7 +278,7 @@
     ],
     "id": 26,
     "labels": [
-      "to-do",
+      "to do",
       "reviews"
     ],
     "title": "User Story 18, User can delete a book review"
@@ -290,7 +290,7 @@
     ],
     "id": 27,
     "labels": [
-      "to-do",
+      "to do",
       "books"
     ],
     "title": "User Story 19, User can delete a book"
@@ -302,7 +302,7 @@
     ],
     "id": 28,
     "labels": [
-      "to-do",
+      "to do",
       "authors"
     ],
     "title": "User Story 20, User can delete an author"
@@ -321,7 +321,7 @@
     ],
     "id": 30,
     "labels": [
-      "to-do",
+      "to do",
       "reviews"
     ],
     "title": "User Story 21, (EXTENSION 1/4) User reviews are sortable"
@@ -333,7 +333,7 @@
     ],
     "id": 31,
     "labels": [
-      "to-do",
+      "to do",
       "reviews"
     ],
     "title": "User Story 22, (EXTENSION 2/4) Review usernames are unique for a given book"
@@ -345,7 +345,7 @@
     ],
     "id": 32,
     "labels": [
-      "to-do",
+      "to do",
       "reviews"
     ],
     "title": "User Story 23, (EXTENSION 3/4) Book Index Page statistics shows top authors"
@@ -354,7 +354,7 @@
     "childOf": 29,
     "id": 33,
     "labels": [
-      "to-do"
+      "to do"
     ],
     "title": "User Story 24, (EXTENSION 4/4) Spend any extra time on HTML/CSS"
   }

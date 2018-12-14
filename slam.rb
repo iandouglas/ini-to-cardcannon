@@ -47,14 +47,17 @@ def create_cards(repo, card_data)
     issue = nil
     Octopoller.poll(wait: :exponentially, retries: 100) do
       begin
-        issue = @client.create_issue(repo, card['title'], markdown, {labels: card['labels']})
+        issue = @client.create_issue(repo, card['title'], markdown, labels: card['labels'])
       rescue => e
         puts "Rescued: #{e.inspect}"
+        puts @client.rate_limit.inspect
+        puts "***---*** LONG SLEEP, #{@client.rate_limit.resets_in/60} minutes ***---***"
+        sleep @client.rate_limit.resets_in
         :re_poll
       end
     end
     @card_tracker[card_id] = issue.number
-    sleep 1
+    sleep 3
     print "."
   end
 end
@@ -81,13 +84,16 @@ def update_card_relationships(repo, cards, tracker)
 
       Octopoller.poll(wait: :exponentially, retries: 100) do
         begin
-          @client.update_issue(repo, issue_number, issue.title, issue.body)
+          @client.update_issue(repo, issue_number, issue.title, issue.body, labels: issue.labels)
         rescue => e
           puts "Rescued: #{e.inspect}"
+          puts @client.rate_limit.inspect
+          puts "***---*** LONG SLEEP, #{@client.rate_limit.resets_in/60} minutes ***---***"
+          sleep @client.rate_limit.resets_in
           :re_poll
         end
       end
-      sleep 1
+      sleep 3
       print "."
     end
   end

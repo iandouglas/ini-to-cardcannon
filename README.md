@@ -26,7 +26,7 @@ Structure your INI files in this format:
 ```
 [story-slug]
 title = Epic: Whatever
-labels: to-do, whatever
+labels: to do, whatever
 child_of: story-slug-of-parent
 story_text: line 1 of story
     line 2 of story
@@ -35,7 +35,7 @@ story_text: line 1 of story
 
 [story-slug-2]
 title = A Very Whatever Story
-labels: to-do, whatever
+labels: to do, whatever
 child_of: story-slug
 story_text: line 1 of story
     line 2 of story
@@ -44,7 +44,7 @@ story_text: line 1 of story
 
 [story-slug-3]
 title = A Very Whatever Story
-labels: to-do, whatever
+labels: to do, whatever
 child_of: story-slug
 depends_on: story-slug-2
 story_text: line 1 of story

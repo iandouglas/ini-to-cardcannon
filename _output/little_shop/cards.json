@@ -11,7 +11,7 @@
     "childOf": 3,
     "id": 2,
     "labels": [
-      "to-do",
+      "to do",
       "heroku"
     ],
     "title": "User Story 1, Deploy your application to Heroku"
@@ -29,7 +29,7 @@
     "childOf": 3,
     "id": 4,
     "labels": [
-      "to-do",
+      "to do",
       "navigation",
       "visitor"
     ],
@@ -42,7 +42,7 @@
     ],
     "id": 5,
     "labels": [
-      "to-do",
+      "to do",
       "navigation",
       "user"
     ],
@@ -55,7 +55,7 @@
     ],
     "id": 6,
     "labels": [
-      "to-do",
+      "to do",
       "navigation",
       "merchant"
     ],
@@ -68,7 +68,7 @@
     ],
     "id": 7,
     "labels": [
-      "to-do",
+      "to do",
       "navigation",
       "admin"
     ],
@@ -82,7 +82,7 @@
     ],
     "id": 8,
     "labels": [
-      "to-do",
+      "to do",
       "navigation",
       "profile",
       "dashboard",
@@ -111,7 +111,7 @@
     ],
     "id": 10,
     "labels": [
-      "to-do",
+      "to do",
       "visitor",
       "user"
     ],
@@ -124,7 +124,7 @@
     ],
     "id": 11,
     "labels": [
-      "to-do",
+      "to do",
       "visitor",
       "user"
     ],
@@ -137,7 +137,7 @@
     ],
     "id": 12,
     "labels": [
-      "to-do",
+      "to do",
       "user",
       "registration"
     ],
@@ -160,7 +160,7 @@
     ],
     "id": 14,
     "labels": [
-      "to-do",
+      "to do",
       "session",
       "user"
     ],
@@ -173,7 +173,7 @@
     ],
     "id": 15,
     "labels": [
-      "to-do",
+      "to do",
       "session",
       "user"
     ],
@@ -183,7 +183,7 @@
     "childOf": 13,
     "id": 16,
     "labels": [
-      "to-do",
+      "to do",
       "session",
       "user"
     ],
@@ -193,7 +193,7 @@
     "childOf": 13,
     "id": 17,
     "labels": [
-      "to-do",
+      "to do",
       "session",
       "user"
     ],
@@ -218,7 +218,7 @@
     ],
     "id": 19,
     "labels": [
-      "to-do",
+      "to do",
       "items"
     ],
     "title": "User Story 14, Items Index Page"
@@ -230,7 +230,7 @@
     ],
     "id": 20,
     "labels": [
-      "to-do",
+      "to do",
       "items",
       "statistics"
     ],
@@ -243,7 +243,7 @@
     ],
     "id": 21,
     "labels": [
-      "to-do",
+      "to do",
       "items"
     ],
     "title": "User Story 16, Item Show Page"
@@ -265,7 +265,7 @@
     "childOf": 22,
     "id": 23,
     "labels": [
-      "to-do",
+      "to do",
       "user",
       "profile"
     ],
@@ -279,7 +279,7 @@
     ],
     "id": 24,
     "labels": [
-      "to-do",
+      "to do",
       "user",
       "profile",
       "orders"
@@ -293,7 +293,7 @@
     ],
     "id": 25,
     "labels": [
-      "to-do",
+      "to do",
       "user",
       "profile"
     ],
@@ -307,7 +307,7 @@
     ],
     "id": 26,
     "labels": [
-      "to-do",
+      "to do",
       "user",
       "profile"
     ],
@@ -321,7 +321,7 @@
     ],
     "id": 27,
     "labels": [
-      "to-do",
+      "to do",
       "admin",
       "user",
       "profile"
@@ -336,7 +336,7 @@
     ],
     "id": 28,
     "labels": [
-      "to-do",
+      "to do",
       "admin",
       "user",
       "profile"
@@ -351,7 +351,7 @@
     ],
     "id": 29,
     "labels": [
-      "to-do",
+      "to do",
       "admin",
       "user",
       "profile",
@@ -367,7 +367,7 @@
     ],
     "id": 30,
     "labels": [
-      "to-do",
+      "to do",
       "admin",
       "user",
       "merchant"
@@ -382,7 +382,7 @@
     ],
     "id": 31,
     "labels": [
-      "to-do",
+      "to do",
       "admin",
       "user",
       "merchant"
@@ -408,7 +408,7 @@
     ],
     "id": 33,
     "labels": [
-      "to-do",
+      "to do",
       "items",
       "cart"
     ],
@@ -421,7 +421,7 @@
     ],
     "id": 34,
     "labels": [
-      "to-do",
+      "to do",
       "items",
       "cart"
     ],
@@ -434,7 +434,7 @@
     ],
     "id": 35,
     "labels": [
-      "to-do",
+      "to do",
       "cart"
     ],
     "title": "User Story 28, User views their cart show page but it's empty"
@@ -446,7 +446,7 @@
     ],
     "id": 36,
     "labels": [
-      "to-do",
+      "to do",
       "items",
       "cart"
     ],
@@ -459,7 +459,7 @@
     ],
     "id": 37,
     "labels": [
-      "to-do",
+      "to do",
       "items",
       "cart"
     ],
@@ -475,7 +475,7 @@
     ],
     "id": 38,
     "labels": [
-      "to-do",
+      "to do",
       "cart"
     ],
     "title": "User Story 31, Visitors must register or log in to check out"
@@ -488,7 +488,7 @@
     ],
     "id": 39,
     "labels": [
-      "to-do",
+      "to do",
       "cart"
     ],
     "title": "User Story 32, Registered users can check out"
@@ -510,7 +510,7 @@
     ],
     "id": 41,
     "labels": [
-      "to-do",
+      "to do",
       "user",
       "order"
     ],
@@ -523,7 +523,7 @@
     ],
     "id": 42,
     "labels": [
-      "to-do",
+      "to do",
       "admin",
       "user",
       "order"
@@ -538,7 +538,7 @@
     ],
     "id": 43,
     "labels": [
-      "to-do",
+      "to do",
       "user",
       "orders"
     ],
@@ -552,7 +552,7 @@
     ],
     "id": 44,
     "labels": [
-      "to-do",
+      "to do",
       "admin",
       "user",
       "orders"
@@ -566,7 +566,7 @@
     ],
     "id": 45,
     "labels": [
-      "to-do",
+      "to do",
       "merchant",
       "user",
       "orders"
@@ -594,7 +594,7 @@
     ],
     "id": 47,
     "labels": [
-      "to-do",
+      "to do",
       "merchant",
       "dashboard"
     ],
@@ -607,7 +607,7 @@
     ],
     "id": 48,
     "labels": [
-      "to-do",
+      "to do",
       "merchant",
       "dashboard",
       "orders"
@@ -621,7 +621,7 @@
     ],
     "id": 49,
     "labels": [
-      "to-do",
+      "to do",
       "merchant",
       "statistics"
     ],
@@ -634,7 +634,7 @@
     ],
     "id": 50,
     "labels": [
-      "to-do",
+      "to do",
       "merchant",
       "items"
     ],
@@ -644,7 +644,7 @@
     "childOf": 46,
     "id": 51,
     "labels": [
-      "to-do",
+      "to do",
       "admin",
       "merchant",
       "dashboard"
@@ -655,7 +655,7 @@
     "childOf": 46,
     "id": 52,
     "labels": [
-      "to-do",
+      "to do",
       "admin",
       "merchant",
       "user"
@@ -666,7 +666,7 @@
     "childOf": 46,
     "id": 53,
     "labels": [
-      "to-do",
+      "to do",
       "admin",
       "user",
       "merchant"
@@ -692,7 +692,7 @@
     ],
     "id": 55,
     "labels": [
-      "to-do",
+      "to do",
       "merchant"
     ],
     "title": "User Story 45, Merchant Index Page"
@@ -704,7 +704,7 @@
     ],
     "id": 56,
     "labels": [
-      "to-do",
+      "to do",
       "merchant",
       "statistics"
     ],
@@ -717,7 +717,7 @@
     ],
     "id": 57,
     "labels": [
-      "to-do",
+      "to do",
       "admin",
       "merchant"
     ],
@@ -730,7 +730,7 @@
     ],
     "id": 58,
     "labels": [
-      "to-do",
+      "to do",
       "admin",
       "merchant"
     ],
@@ -743,7 +743,7 @@
     ],
     "id": 59,
     "labels": [
-      "to-do",
+      "to do",
       "admin",
       "merchant"
     ],
@@ -769,7 +769,7 @@
     ],
     "id": 61,
     "labels": [
-      "to-do",
+      "to do",
       "merchant",
       "items"
     ],
@@ -782,7 +782,7 @@
     ],
     "id": 62,
     "labels": [
-      "to-do",
+      "to do",
       "merchant",
       "items"
     ],
@@ -795,7 +795,7 @@
     ],
     "id": 63,
     "labels": [
-      "to-do",
+      "to do",
       "merchant",
       "items"
     ],
@@ -808,7 +808,7 @@
     ],
     "id": 64,
     "labels": [
-      "to-do",
+      "to do",
       "merchant",
       "items"
     ],
@@ -821,7 +821,7 @@
     ],
     "id": 65,
     "labels": [
-      "to-do",
+      "to do",
       "merchant",
       "items"
     ],
@@ -834,7 +834,7 @@
     ],
     "id": 66,
     "labels": [
-      "to-do",
+      "to do",
       "merchant",
       "items"
     ],
@@ -847,7 +847,7 @@
     ],
     "id": 67,
     "labels": [
-      "to-do",
+      "to do",
       "merchant",
       "items"
     ],
@@ -860,7 +860,7 @@
     ],
     "id": 68,
     "labels": [
-      "to-do",
+      "to do",
       "merchant",
       "items"
     ],
@@ -875,7 +875,7 @@
     ],
     "id": 69,
     "labels": [
-      "to-do",
+      "to do",
       "merchant",
       "items"
     ],
@@ -902,7 +902,7 @@
     ],
     "id": 71,
     "labels": [
-      "to-do",
+      "to do",
       "merchant",
       "user",
       "orders"
@@ -916,7 +916,7 @@
     ],
     "id": 72,
     "labels": [
-      "to-do",
+      "to do",
       "merchant",
       "user",
       "orders"
@@ -930,7 +930,7 @@
     ],
     "id": 73,
     "labels": [
-      "to-do",
+      "to do",
       "merchant",
       "user",
       "orders"
@@ -954,7 +954,7 @@
     ],
     "id": 75,
     "labels": [
-      "to-do",
+      "to do",
       "admin",
       "user"
     ],
@@ -967,7 +967,7 @@
     ],
     "id": 76,
     "labels": [
-      "to-do",
+      "to do",
       "admin",
       "user"
     ],
@@ -980,7 +980,7 @@
     ],
     "id": 77,
     "labels": [
-      "to-do",
+      "to do",
       "admin",
       "user"
     ],

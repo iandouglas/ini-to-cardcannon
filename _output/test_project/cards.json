@@ -11,7 +11,7 @@
     "childOf": 1,
     "id": 2,
     "labels": [
-      "to-do",
+      "to do",
       "label-1"
     ],
     "title": "User Story 1, Great story title 1"
@@ -23,7 +23,7 @@
     ],
     "id": 3,
     "labels": [
-      "to-do",
+      "to do",
       "label-1",
       "label-2"
     ],
@@ -37,7 +37,7 @@
     ],
     "id": 4,
     "labels": [
-      "to-do",
+      "to do",
       "label-3"
     ],
     "title": "User Story 3, Great story title 3"
