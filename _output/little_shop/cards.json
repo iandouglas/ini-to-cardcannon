@@ -94,7 +94,7 @@
   {
     "childOf": 1,
     "dependsOn": [
-      3
+      4
     ],
     "id": 9,
     "labels": [
@@ -156,7 +156,8 @@
   {
     "childOf": 13,
     "dependsOn": [
-      9
+      10,
+      4
     ],
     "id": 14,
     "labels": [
@@ -250,9 +251,6 @@
   },
   {
     "childOf": 1,
-    "dependsOn": [
-      9
-    ],
     "id": 22,
     "labels": [
       "in progress",
@@ -575,9 +573,6 @@
   },
   {
     "childOf": 1,
-    "dependsOn": [
-      9
-    ],
     "id": 46,
     "labels": [
       "in progress",
@@ -589,8 +584,8 @@
   {
     "childOf": 46,
     "dependsOn": [
-      9,
-      54
+      10,
+      6
     ],
     "id": 47,
     "labels": [

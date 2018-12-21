@@ -17,7 +17,7 @@ if debug_http
   Octokit.middleware = stack
 end
 # iandouglas
-personal_access_token = '23288a899b47f7142ee35fd21859b5b3bf76a6a2'
+personal_access_token = '0c655f9f45e0e6e00ebec38e12bae8847d49b901'
 @client = Octokit::Client.new(:access_token => personal_access_token)
 
 user = @client.user
@@ -69,6 +69,7 @@ def update_card_relationships(repo, cards, tracker)
     issue = nil
     if card['childOf'] or card['dependsOn']
       issue = @client.issue(repo, issue_number)
+      labels = issue.labels
 
       if card['childOf']
         parent_issue = tracker[card['childOf']]
@@ -84,7 +85,7 @@ def update_card_relationships(repo, cards, tracker)
 
       Octopoller.poll(wait: :exponentially, retries: 100) do
         begin
-          @client.update_issue(repo, issue_number, issue.title, issue.body, labels: issue.labels)
+          @client.update_issue(repo, issue_number, issue.title, issue.body, labels: labels.map {|x| x.name})
         rescue => e
           puts "Rescued: #{e.inspect}"
           puts @client.rate_limit.inspect
