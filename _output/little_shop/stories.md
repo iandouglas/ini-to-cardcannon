@@ -129,13 +129,14 @@ I also see text that says "Logged in as Ian Douglas" (or whatever my name is)
 User Story 4, Merchant Navigation
 
 As a merchant user
-I see the same links as a registered user
+I see the same links as a visitor
 Plus the following links:
 - a link to my merchant dashboard ("/dashboard")
+- a link to log out ("/logout")
 
 Minus the following links/info:
-- a link to my shopping cart ("/cart")
-- the count of the items in my cart
+- I do not see a link to log in or register
+- a link to my shopping cart ("/cart") or count of cart items
 ```
 
 ```
@@ -144,13 +145,15 @@ Minus the following links/info:
 User Story 5, Admin Navigation
 
 As an admin user
-I see the same links as a registered user
+I see the same links as a visitor
 Plus the following links
 - a link to see all users ("/admin/users")
+- a link to my admin dashboard ("/admin/dashboard")
+- a link to log out ("/logout")
 
 Minus the following links/info:
-- a link to my shopping cart ("/cart")
-- the count of the items in my cart
+- I do not see a link to log in or register
+- a link to my shopping cart ("/cart") or count of cart items
 ```
 
 ```
@@ -373,6 +376,8 @@ User Story 18, User Profile displays Orders
 As a registered user
 When I visit my profile page
 If my account has ordered items
+I see a link to my Profile Orders page, "/profile/orders"
+When I click on that link
 I see every order I've made, which includes the following information:
 - the ID of the order, which is a link to the order show page
 - the date the order was made
