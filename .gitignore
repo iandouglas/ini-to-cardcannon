@@ -6,3 +6,4 @@ package-lock.json
 coverage
 cardcannon/bin
 cardcannon/lib/python2.7
+.vscode

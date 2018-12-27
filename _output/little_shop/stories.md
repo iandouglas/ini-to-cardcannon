@@ -327,6 +327,8 @@ When I visit the items index page ("/items")
 I see an area with statistics:
 - the top 5 most popular items
 - the bottom 5 least popular items
+
+"Popularity" is determined by total quantity of that item fulfilled
 ```
 
 ```
@@ -823,9 +825,9 @@ When I visit the merchants index page, I see an area with statistics:
 - top 3 merchants who have sold the most by price and quantity
 - top 3 merchants who were fastest at fulfilling items in an order
 - worst 3 merchants who were slowest at fulfilling items in an order
-- top 3 states where any orders were shipped
-- top 3 cities where any orders were shipped (Springfield, MI should not be grouped with Springfield, CO)
-- top 3 biggest orders by quantity of items
+- top 3 states where any orders were shipped (by number of orders)
+- top 3 cities where any orders were shipped (by number of orders, also Springfield, MI should not be grouped with Springfield, CO)
+- top 3 biggest orders by quantity of items shipped in an order
 ```
 
 ```
