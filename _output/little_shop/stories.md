@@ -373,26 +373,7 @@ And I see a link to edit my profile data
 ```
 [ ] done
 
-User Story 18, User Profile displays Orders
-
-As a registered user
-When I visit my profile page
-If my account has ordered items
-I see a link to my Profile Orders page, "/profile/orders"
-When I click on that link
-I see every order I've made, which includes the following information:
-- the ID of the order, which is a link to the order show page
-- the date the order was made
-- the date the order was last updated
-- the current status of the order
-- the total quantity of items in the order
-- the grand total of all items for that order
-```
-
-```
-[ ] done
-
-User Story 19, User Can Edit their Profile Data
+User Story 18, User Can Edit their Profile Data
 
 As a registered user
 When I visit my profile page
@@ -412,7 +393,7 @@ And I see my updated information
 ```
 [ ] done
 
-User Story 20, User Editing Profile Data must have unique Email address
+User Story 19, User Editing Profile Data must have unique Email address
 
 As a registered user
 When I attempt to edit my profile data
@@ -425,7 +406,7 @@ And I see a flash message telling me that email address is already in use
 ```
 [ ] done
 
-User Story 21, Admin User Profile Page
+User Story 20, Admin User Profile Page
 
 As an admin user
 When I visit a user's profile page ("/admin/users/5")
@@ -435,7 +416,7 @@ I see the same information the user would see themselves
 ```
 [ ] done
 
-User Story 22, Admin can edit a user's profile data
+User Story 21, Admin can edit a user's profile data
 
 As an admin user
 When I visit a user's profile page ("/admin/users/5")
@@ -448,7 +429,7 @@ Except I am returned to the show page path of
 ```
 [ ] done
 
-User Story 23, Admin Sees User's Orders
+User Story 22, Admin Sees User's Orders
 
 As an admin user
 When I visit a user's profile page
@@ -458,7 +439,7 @@ I see the same order data that the user sees
 ```
 [ ] done
 
-User Story 24, Admin can make a User a Merchant
+User Story 23, Admin can make a User a Merchant
 
 As an admin user
 When I visit a user's profile page ("/admin/users/5")
@@ -474,7 +455,7 @@ Only admins can reach any route necessary to upgrade the user to merchant status
 ```
 [ ] done
 
-User Story 25, Admin is redirected from User profile to Merchant dashboard
+User Story 24, Admin is redirected from User profile to Merchant dashboard
 
 As an admin user
 If I visit a profile page for a user, but that user is a merchant
@@ -495,7 +476,7 @@ Merchants and Admin users cannot order items. This will cause a conflict in the 
 ```
 [ ] done
 
-User Story 26, User adds an item to the cart
+User Story 25, User adds an item to the cart
 
 As a visitor or registered user
 When I visit an item's show page from the items catalog
@@ -509,7 +490,7 @@ The navigation bar increments my cart counter
 ```
 [ ] done
 
-User Story 27, User views their cart show page with items in the cart
+User Story 26, User views their cart show page with items in the cart
 
 As a visitor or registered user
 When I have added items to my cart
@@ -530,7 +511,7 @@ I also see a grand total of what everything in my cart will cost
 ```
 [ ] done
 
-User Story 28, User views their cart show page but it's empty
+User Story 27, User views their cart show page but it's empty
 
 As a visitor or registered user
 When I add NO items to my cart yet
@@ -542,7 +523,7 @@ I do NOT see the link to empty my cart
 ```
 [ ] done
 
-User Story 29, User can empty a cart that has items
+User Story 28, User can empty a cart that has items
 
 As a visitor or registered user
 When I have items in my cart
@@ -556,7 +537,7 @@ The navigation bar shows 0 items in my cart
 ```
 [ ] done
 
-User Story 30, User can manipulate quantities in their cart
+User Story 29, User can manipulate quantities in their cart
 
 As a visitor or registered user
 When I have items in my cart
@@ -575,7 +556,7 @@ I see a button or link to decrement the count of items I want to purchase
 ```
 [ ] done
 
-User Story 31, Visitors must register or log in to check out
+User Story 30, Visitors must register or log in to check out
 
 As a visitor
 When I have items in my cart
@@ -588,7 +569,7 @@ The words "log in" is a link to the login page
 ```
 [ ] done
 
-User Story 32, Registered users can check out
+User Story 31, Registered users can check out
 
 As a registered user
 When I add items to my cart
@@ -598,13 +579,14 @@ And I click the button or link to check out
 An order is created in the system, which has a status of "pending"
 I am taken to my orders page ("/profile")
 I see a flash message telling me my order was created
-I see my new order listed on my profile page
+I see my new order listed on my profile orders page
+My cart is now empty
 ```
 
 ---
 
 ## User Order Show Page
-The show page for an order will be shared between users, merchants and admins.
+The show page template for an order can be shared between users, merchants and admins to DRY up our presentation logic. They will operate through separate controllers, though.
 
 ### User Control
 - Users can cancel an order if at least one item in the order is NOT yet fulfilled
@@ -621,10 +603,39 @@ The show page for an order will be shared between users, merchants and admins.
 ```
 [ ] done
 
-User Story 33, User views an Order Show Page
+User Story 32, User Profile displays Orders link
 
 As a registered user
-When I visit my profile page
+When I visit my Profile page
+And I have orders placed in the system
+Then I see a link to my Profile Orders page
+
+This link is also in the nav bar, but this new link is for admins.
+```
+
+```
+[ ] done
+
+User Story 33, User Profile displays Orders
+
+As a registered user
+When I visit my Profile Orders page, "/profile/orders"
+I see every order I've made, which includes the following information:
+- the ID of the order, which is a link to the order show page
+- the date the order was made
+- the date the order was last updated
+- the current status of the order
+- the total quantity of items in the order
+- the grand total of all items for that order
+```
+
+```
+[ ] done
+
+User Story 34, User views an Order Show Page
+
+As a registered user
+When I visit my Profile Orders page
 And I click on a link for order's show page
 My URL route is now something like "/profile/orders/15"
 I see all information about the order, including the following information:
@@ -640,7 +651,7 @@ I see all information about the order, including the following information:
 ```
 [ ] done
 
-User Story 34, Admin views a User's Order Show Page
+User Story 35, Admin views a User's Order Show Page
 
 As an admin user
 When I visit a user's profile
@@ -659,7 +670,7 @@ I see all information about the order, including the following information:
 ```
 [ ] done
 
-User Story 35, User cancels an order
+User Story 36, User cancels an order
 
 As a registered user
 When I visit an order's show page
@@ -676,7 +687,7 @@ When I click the cancel button for an order, the following happens:
 ```
 [ ] done
 
-User Story 36, Admin cancels a user's order
+User Story 37, Admin cancels a user's order
 
 As an admin user
 When I visit a user's order show page
@@ -688,7 +699,7 @@ The same behaviors happen as if the user canceled the order themselves
 ```
 [ ] done
 
-User Story 37, All Merchants fulfill items on an order
+User Story 38, All Merchants fulfill items on an order
 
 When all items in an order have been "fulfilled" by their merchants
 The order status changes from "pending" to "complete"
@@ -705,7 +716,7 @@ Admin users will see more information on the "/merchants" route that all users s
 ```
 [ ] done
 
-User Story 38, Merchant Dashboard Show Page
+User Story 39, Merchant Dashboard Show Page
 
 As a merchant user
 When I visit my dashboard ("/dashboard")
@@ -715,7 +726,7 @@ I see my profile data, but cannot edit it
 ```
 [ ] done
 
-User Story 39, Merchant Dashboard displays Orders
+User Story 40, Merchant Dashboard displays Orders
 
 As a merchant
 When I visit my dashboard ("/dashboard")
@@ -731,7 +742,7 @@ Each order listed includes the following information:
 ```
 [ ] done
 
-User Story 40, Merchant Dashboard Statistics
+User Story 41, Merchant Dashboard Statistics
 
 As a merchant
 When I visit my dashboard, I see an area with statistics:
@@ -747,7 +758,7 @@ When I visit my dashboard, I see an area with statistics:
 ```
 [ ] done
 
-User Story 41, Merchant's Items index page
+User Story 42, Merchant's Items index page
 
 As a merchant
 When I visit my dashboard
@@ -759,7 +770,7 @@ My URI route should be "/dashboard/items"
 ```
 [ ] done
 
-User Story 42, Admin can see a merchant's dashboard
+User Story 43, Admin can see a merchant's dashboard
 
 As an admin user
 When I visit the merchant index page ("/merchants")
@@ -771,7 +782,7 @@ Then I see everything that merchant would see
 ```
 [ ] done
 
-User Story 43, Admin can downgrade a merchant to regular user
+User Story 44, Admin can downgrade a merchant to regular user
 
 As an admin user
 When I visit a merchant's dashboard ("/admin/merchants/6")
@@ -781,6 +792,7 @@ When I click on that link
 I am redirected to ("/admin/users/6") because the merchant is now a regular user
 And I see a flash message indicating the user has been downgraded
 The next time this user logs in they are no longer a merchant
+All items for sale by this user are disabled
 Only admins can see the "downgrade" button
 Only admins can reach any route necessary to downgrade the merchant to user status
 ```
@@ -788,7 +800,7 @@ Only admins can reach any route necessary to downgrade the merchant to user stat
 ```
 [ ] done
 
-User Story 44, Admin is redirected from Merchant Dashboard to User profile
+User Story 45, Admin is redirected from Merchant Dashboard to User profile
 
 As an admin user
 If I visit a merchant dashboard, but that merchant is a regular user
@@ -806,7 +818,7 @@ All users can see a merchant index page at "/merchants" which will list some bas
 ```
 [ ] done
 
-User Story 45, Merchant Index Page
+User Story 46, Merchant Index Page
 
 As a visitor
 When I visit the merchant's index page at "/merchants"
@@ -818,7 +830,7 @@ I also see the date they registered
 ```
 [ ] done
 
-User Story 46, Merchant Index Page Statistics
+User Story 47, Merchant Index Page Statistics
 
 As a visitor
 When I visit the merchants index page, I see an area with statistics:
@@ -833,7 +845,7 @@ When I visit the merchants index page, I see an area with statistics:
 ```
 [ ] done
 
-User Story 47, Admin visits Merchant Index Page
+User Story 48, Admin visits Merchant Index Page
 
 As an admin user
 When I visit the merchant's index page at "/merchants"
@@ -847,7 +859,7 @@ I see an "enable" button next to any merchants whose accounts are disabled
 ```
 [ ] done
 
-User Story 48, Admin disables a merchant account
+User Story 49, Admin disables a merchant account
 
 As an admin merchant
 When I visit the merchant index page
@@ -861,7 +873,7 @@ This merchant cannot log in
 ```
 [ ] done
 
-User Story 49, Admin enables a merchant account
+User Story 50, Admin enables a merchant account
 
 As an admin merchant
 When I visit the merchant index page
@@ -883,7 +895,7 @@ Admin users share all management functionality, but the routes will be much long
 ```
 [ ] done
 
-User Story 50, Merchant Items Index Page
+User Story 51, Merchant Items Index Page
 
 As a merchant
 When I visit my items page "/dashboard/items"
@@ -904,7 +916,7 @@ If the item is disabled, I see a button or link to enable the item
 ```
 [ ] done
 
-User Story 51, Merchant disables an item
+User Story 52, Merchant disables an item
 
 As a merchant
 When I visit my items page
@@ -917,7 +929,7 @@ I see the item is now disabled
 ```
 [ ] done
 
-User Story 52, Merchant enables an item
+User Story 53, Merchant enables an item
 
 As a merchant
 When I visit my items page
@@ -930,7 +942,7 @@ I see the item is now enabled
 ```
 [ ] done
 
-User Story 53, Merchant deletes an item
+User Story 54, Merchant deletes an item
 
 As a merchant
 When I visit my items page
@@ -943,7 +955,7 @@ I no longer see this item on the page
 ```
 [ ] done
 
-User Story 54, Merchant adds an item
+User Story 55, Merchant adds an item
 
 As a merchant
 When I visit my items page
@@ -966,7 +978,7 @@ If I left the image field blank, I see a placeholder image for the thumbnail
 ```
 [ ] done
 
-User Story 55, Merchant cannot add an item if details are bad/missing
+User Story 56, Merchant cannot add an item if details are bad/missing
 
 As a merchant
 When I try to add a new item
@@ -979,7 +991,7 @@ All fields are re-populated with my previous data
 ```
 [ ] done
 
-User Story 56, Merchant edits an item
+User Story 57, Merchant edits an item
 
 As a merchant
 When I visit my items page
@@ -1002,7 +1014,7 @@ If I left the image field blank, I see a placeholder image for the thumbnail
 ```
 [ ] done
 
-User Story 57, Merchant cannot edit an item if details are bad/missing
+User Story 58, Merchant cannot edit an item if details are bad/missing
 
 As a merchant
 When I try to edit an existing item
@@ -1015,7 +1027,7 @@ All fields are re-populated with my previous data
 ```
 [ ] done
 
-User Story 58, Admin can manage items on behalf of a merchant
+User Story 59, Admin can manage items on behalf of a merchant
 
 As an admin user
 When I visit a merchant's profile page
@@ -1039,7 +1051,7 @@ Admins can fulfill items in an order on behalf of a merchant.
 ```
 [ ] done
 
-User Story 59, Merchant sees an order show page
+User Story 60, Merchant sees an order show page
 
 As a merchant
 When I visit an order show page from my dashboard
@@ -1056,7 +1068,7 @@ For each item, I see the following information:
 ```
 [ ] done
 
-User Story 60, Merchant fulfills part of an order
+User Story 61, Merchant fulfills part of an order
 
 As a merchant
 When I visit an order show page from my dashboard
@@ -1075,7 +1087,7 @@ If I have already fulfilled this item, I see text indicating such.
 ```
 [ ] done
 
-User Story 61, Merchant cannot fulfill an order due to lack of inventory
+User Story 62, Merchant cannot fulfill an order due to lack of inventory
 
 As a merchant
 When I visit an order show page from my dashboard
@@ -1093,7 +1105,7 @@ The index page indicated in these stories should be namespaced under a route "/a
 ```
 [ ] done
 
-User Story 62, Admin User Index Page
+User Story 63, Admin User Index Page
 
 As an admin user
 When I click on the "Users" link in the nav
@@ -1108,7 +1120,7 @@ I see an "enable" button next to any users whose accounts are disabled
 ```
 [ ] done
 
-User Story 63, Admin disables a user account
+User Story 64, Admin disables a user account
 
 As an admin user
 When I visit the user index page
@@ -1122,7 +1134,7 @@ This user cannot log in
 ```
 [ ] done
 
-User Story 64, Admin enables a user account
+User Story 65, Admin enables a user account
 
 As an admin user
 When I visit the user index page
