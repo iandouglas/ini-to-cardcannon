@@ -300,7 +300,7 @@
     "childOf": 22,
     "dependsOn": [
       7,
-      76
+      77
     ],
     "id": 26,
     "labels": [
@@ -931,7 +931,7 @@
     "title": "User Story 61, Merchant fulfills part of an order"
   },
   {
-    "childOf": 39,
+    "childOf": 71,
     "dependsOn": [
       49
     ],
@@ -945,8 +945,24 @@
     "title": "User Story 62, Merchant cannot fulfill an order due to lack of inventory"
   },
   {
-    "childOf": 1,
+    "childOf": 71,
+    "dependsOn": [
+      73,
+      74,
+      46
+    ],
     "id": 75,
+    "labels": [
+      "to do",
+      "merchant",
+      "admin",
+      "orders"
+    ],
+    "title": "User Story 63, Admin can fulfill order items on behalf of a merchant"
+  },
+  {
+    "childOf": 1,
+    "id": 76,
     "labels": [
       "in progress",
       "admin",
@@ -955,22 +971,9 @@
     "title": "Epic: Admin User Index Page"
   },
   {
-    "childOf": 75,
+    "childOf": 76,
     "dependsOn": [
       7
-    ],
-    "id": 76,
-    "labels": [
-      "to do",
-      "admin",
-      "user"
-    ],
-    "title": "User Story 63, Admin User Index Page"
-  },
-  {
-    "childOf": 75,
-    "dependsOn": [
-      76
     ],
     "id": 77,
     "labels": [
@@ -978,12 +981,12 @@
       "admin",
       "user"
     ],
-    "title": "User Story 64, Admin disables a user account"
+    "title": "User Story 64, Admin User Index Page"
   },
   {
-    "childOf": 75,
+    "childOf": 76,
     "dependsOn": [
-      76
+      77
     ],
     "id": 78,
     "labels": [
@@ -991,6 +994,19 @@
       "admin",
       "user"
     ],
-    "title": "User Story 65, Admin enables a user account"
+    "title": "User Story 65, Admin disables a user account"
+  },
+  {
+    "childOf": 76,
+    "dependsOn": [
+      77
+    ],
+    "id": 79,
+    "labels": [
+      "to do",
+      "admin",
+      "user"
+    ],
+    "title": "User Story 66, Admin enables a user account"
   }
 ]

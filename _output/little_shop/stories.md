@@ -1097,6 +1097,19 @@ Then I do not see a "fulfill" button or link
 Instead I see a big red notice next to the item indicating I cannot fulfill this item
 ```
 
+```
+[ ] done
+
+User Story 63, Admin can fulfill order items on behalf of a merchant
+
+As a merchant
+When I visit an order show page from my dashboard
+For each item of mine in the order
+If the user's desired quantity is greater than my current inventory quantity for that item
+Then I do not see a "fulfill" button or link
+Instead I see a big red notice next to the item indicating I cannot fulfill this item
+```
+
 ---
 
 ## Admin's User Index Page
@@ -1105,7 +1118,7 @@ The index page indicated in these stories should be namespaced under a route "/a
 ```
 [ ] done
 
-User Story 63, Admin User Index Page
+User Story 64, Admin User Index Page
 
 As an admin user
 When I click on the "Users" link in the nav
@@ -1120,7 +1133,7 @@ I see an "enable" button next to any users whose accounts are disabled
 ```
 [ ] done
 
-User Story 64, Admin disables a user account
+User Story 65, Admin disables a user account
 
 As an admin user
 When I visit the user index page
@@ -1134,7 +1147,7 @@ This user cannot log in
 ```
 [ ] done
 
-User Story 65, Admin enables a user account
+User Story 66, Admin enables a user account
 
 As an admin user
 When I visit the user index page
