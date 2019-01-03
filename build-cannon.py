@@ -87,7 +87,9 @@ for filename in os.listdir(path):
                 options = config.options(section_name)
                 # print(options)
                 if 'child_of' in config.options(section_name):
-                    story['child_of'] = config.get(section_name, 'child_of')
+                    story['child_of'] = [config.get(section_name, 'child_of')]
+                    if 'epic-application' not in story['child_of']:
+                        story['child_of'].append('epic-application')
                 if 'depends_on' in config.options(section_name):
                     story['depends_on'] = config.get(section_name, 'depends_on')
                 # print(story)
@@ -124,8 +126,8 @@ with open('_output/{}/cards.json'.format(project), 'w') as f:
     for story in stories:
         story = stories[story]
         # print(story['title'])
-        if 'child_of' in story:
-            story['childOf'] = get_id_by_slug(story['child_of'])[0]
+        if 'child_of' in story and 'Epic:' not in story['title']:
+            story['childOf'] = get_id_by_slug(story['child_of'])
             del story['child_of']
         if 'depends_on' in story:
             story['dependsOn'] = get_id_by_slug(story['depends_on'])

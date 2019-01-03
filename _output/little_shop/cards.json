@@ -2,13 +2,16 @@
   {
     "id": 1,
     "labels": [
-      "in progress",
+      "inbox",
       "app"
     ],
     "title": "Epic: Core Application"
   },
   {
-    "childOf": 3,
+    "childOf": [
+      3,
+      1
+    ],
     "id": 2,
     "labels": [
       "to do",
@@ -17,16 +20,18 @@
     "title": "User Story 1, Deploy your application to Heroku"
   },
   {
-    "childOf": 1,
     "id": 3,
     "labels": [
-      "in progress",
+      "inbox",
       "navigation"
     ],
     "title": "Epic: Navigation"
   },
   {
-    "childOf": 3,
+    "childOf": [
+      3,
+      1
+    ],
     "id": 4,
     "labels": [
       "to do",
@@ -36,7 +41,10 @@
     "title": "User Story 2, Visitor Navigation"
   },
   {
-    "childOf": 3,
+    "childOf": [
+      3,
+      1
+    ],
     "dependsOn": [
       4
     ],
@@ -49,7 +57,10 @@
     "title": "User Story 3, User Navigation"
   },
   {
-    "childOf": 3,
+    "childOf": [
+      3,
+      1
+    ],
     "dependsOn": [
       5
     ],
@@ -62,7 +73,10 @@
     "title": "User Story 4, Merchant Navigation"
   },
   {
-    "childOf": 3,
+    "childOf": [
+      3,
+      1
+    ],
     "dependsOn": [
       5
     ],
@@ -92,20 +106,19 @@
     "title": "User Story 6, Users cannot navigate to certain paths"
   },
   {
-    "childOf": 1,
-    "dependsOn": [
-      4
-    ],
     "id": 9,
     "labels": [
-      "in progress",
+      "inbox",
       "user",
       "registration"
     ],
     "title": "Epic: User Registration"
   },
   {
-    "childOf": 9,
+    "childOf": [
+      9,
+      1
+    ],
     "dependsOn": [
       4
     ],
@@ -118,7 +131,10 @@
     "title": "User Story 7, User Registration"
   },
   {
-    "childOf": 9,
+    "childOf": [
+      9,
+      1
+    ],
     "dependsOn": [
       10
     ],
@@ -131,7 +147,10 @@
     "title": "User Story 8, User Registration Missing Details"
   },
   {
-    "childOf": 9,
+    "childOf": [
+      9,
+      1
+    ],
     "dependsOn": [
       10
     ],
@@ -144,17 +163,19 @@
     "title": "User Story 9, Registration Email must be unique"
   },
   {
-    "childOf": 1,
     "id": 13,
     "labels": [
-      "in progress",
+      "inbox",
       "admin",
       "user"
     ],
     "title": "Epic: Login, Logout"
   },
   {
-    "childOf": 13,
+    "childOf": [
+      13,
+      1
+    ],
     "dependsOn": [
       10,
       4
@@ -168,7 +189,10 @@
     "title": "User Story 10, User can Login"
   },
   {
-    "childOf": 13,
+    "childOf": [
+      13,
+      1
+    ],
     "dependsOn": [
       14
     ],
@@ -181,7 +205,10 @@
     "title": "User Story 11, User cannot log in with bad credentials"
   },
   {
-    "childOf": 13,
+    "childOf": [
+      13,
+      1
+    ],
     "id": 16,
     "labels": [
       "to do",
@@ -191,7 +218,10 @@
     "title": "User Story 12, Users who are logged in already are redirected"
   },
   {
-    "childOf": 13,
+    "childOf": [
+      13,
+      1
+    ],
     "id": 17,
     "labels": [
       "to do",
@@ -201,19 +231,18 @@
     "title": "User Story 13, User can log out"
   },
   {
-    "childOf": 1,
-    "dependsOn": [
-      4
-    ],
     "id": 18,
     "labels": [
-      "in progress",
+      "inbox",
       "items"
     ],
     "title": "Epic: Items Catalog"
   },
   {
-    "childOf": 18,
+    "childOf": [
+      18,
+      1
+    ],
     "dependsOn": [
       4
     ],
@@ -225,7 +254,10 @@
     "title": "User Story 14, Items Index Page"
   },
   {
-    "childOf": 18,
+    "childOf": [
+      18,
+      1
+    ],
     "dependsOn": [
       19
     ],
@@ -238,7 +270,10 @@
     "title": "User Story 15, Items Index Page Statistics"
   },
   {
-    "childOf": 18,
+    "childOf": [
+      18,
+      1
+    ],
     "dependsOn": [
       19
     ],
@@ -250,17 +285,19 @@
     "title": "User Story 16, Item Show Page"
   },
   {
-    "childOf": 1,
     "id": 22,
     "labels": [
-      "in progress",
+      "inbox",
       "user",
       "profile"
     ],
     "title": "Epic: User Profile Show Page"
   },
   {
-    "childOf": 22,
+    "childOf": [
+      22,
+      1
+    ],
     "id": 23,
     "labels": [
       "to do",
@@ -270,7 +307,10 @@
     "title": "User Story 17, User Profile Show Page"
   },
   {
-    "childOf": 22,
+    "childOf": [
+      22,
+      1
+    ],
     "dependsOn": [
       23
     ],
@@ -283,7 +323,10 @@
     "title": "User Story 18, User Can Edit their Profile Data"
   },
   {
-    "childOf": 22,
+    "childOf": [
+      22,
+      1
+    ],
     "dependsOn": [
       23,
       24
@@ -297,7 +340,10 @@
     "title": "User Story 19, User Editing Profile Data must have unique Email address"
   },
   {
-    "childOf": 22,
+    "childOf": [
+      22,
+      1
+    ],
     "dependsOn": [
       7,
       77
@@ -312,7 +358,10 @@
     "title": "User Story 20, Admin User Profile Page"
   },
   {
-    "childOf": 22,
+    "childOf": [
+      22,
+      1
+    ],
     "dependsOn": [
       7,
       26
@@ -327,7 +376,10 @@
     "title": "User Story 21, Admin can edit a user's profile data"
   },
   {
-    "childOf": 22,
+    "childOf": [
+      22,
+      1
+    ],
     "dependsOn": [
       26,
       42
@@ -343,7 +395,10 @@
     "title": "User Story 22, Admin Sees User's Orders"
   },
   {
-    "childOf": 22,
+    "childOf": [
+      22,
+      1
+    ],
     "dependsOn": [
       26,
       52
@@ -358,7 +413,10 @@
     "title": "User Story 23, Admin can make a User a Merchant"
   },
   {
-    "childOf": 22,
+    "childOf": [
+      22,
+      1
+    ],
     "dependsOn": [
       26,
       52
@@ -373,19 +431,18 @@
     "title": "User Story 24, Admin is redirected from User profile to Merchant dashboard"
   },
   {
-    "childOf": 1,
-    "dependsOn": [
-      4
-    ],
     "id": 31,
     "labels": [
-      "in progress",
+      "inbox",
       "cart"
     ],
     "title": "Epic: Shopping Cart and Checkout"
   },
   {
-    "childOf": 31,
+    "childOf": [
+      31,
+      1
+    ],
     "dependsOn": [
       21
     ],
@@ -398,7 +455,10 @@
     "title": "User Story 25, User adds an item to the cart"
   },
   {
-    "childOf": 31,
+    "childOf": [
+      31,
+      1
+    ],
     "dependsOn": [
       4
     ],
@@ -411,7 +471,10 @@
     "title": "User Story 26, User views their cart show page with items in the cart"
   },
   {
-    "childOf": 31,
+    "childOf": [
+      31,
+      1
+    ],
     "dependsOn": [
       4
     ],
@@ -423,7 +486,10 @@
     "title": "User Story 27, User views their cart show page but it's empty"
   },
   {
-    "childOf": 31,
+    "childOf": [
+      31,
+      1
+    ],
     "dependsOn": [
       33
     ],
@@ -436,7 +502,10 @@
     "title": "User Story 28, User can empty a cart that has items"
   },
   {
-    "childOf": 31,
+    "childOf": [
+      31,
+      1
+    ],
     "dependsOn": [
       33
     ],
@@ -449,7 +518,10 @@
     "title": "User Story 29, User can manipulate quantities in their cart"
   },
   {
-    "childOf": 31,
+    "childOf": [
+      31,
+      1
+    ],
     "dependsOn": [
       33,
       4,
@@ -464,7 +536,10 @@
     "title": "User Story 30, Visitors must register or log in to check out"
   },
   {
-    "childOf": 31,
+    "childOf": [
+      31,
+      1
+    ],
     "dependsOn": [
       33
     ],
@@ -476,17 +551,19 @@
     "title": "User Story 31, Registered users can check out"
   },
   {
-    "childOf": 1,
     "id": 39,
     "labels": [
-      "in progress",
+      "inbox",
       "orders",
       "user"
     ],
     "title": "Epic: User Order Show Page"
   },
   {
-    "childOf": 39,
+    "childOf": [
+      39,
+      1
+    ],
     "dependsOn": [
       23
     ],
@@ -500,7 +577,10 @@
     "title": "User Story 32, User Profile displays Orders link"
   },
   {
-    "childOf": 39,
+    "childOf": [
+      39,
+      1
+    ],
     "dependsOn": [
       23
     ],
@@ -514,7 +594,10 @@
     "title": "User Story 33, User Profile displays Orders"
   },
   {
-    "childOf": 39,
+    "childOf": [
+      39,
+      1
+    ],
     "dependsOn": [
       41
     ],
@@ -527,7 +610,10 @@
     "title": "User Story 34, User views an Order Show Page"
   },
   {
-    "childOf": 39,
+    "childOf": [
+      39,
+      1
+    ],
     "dependsOn": [
       28
     ],
@@ -541,7 +627,10 @@
     "title": "User Story 35, Admin views a User's Order Show Page"
   },
   {
-    "childOf": 39,
+    "childOf": [
+      39,
+      1
+    ],
     "dependsOn": [
       23,
       42
@@ -555,7 +644,10 @@
     "title": "User Story 36, User cancels an order"
   },
   {
-    "childOf": 39,
+    "childOf": [
+      39,
+      1
+    ],
     "dependsOn": [
       23,
       42
@@ -570,7 +662,9 @@
     "title": "User Story 37, Admin cancels a user's order"
   },
   {
-    "childOf": 1,
+    "childOf": [
+      1
+    ],
     "dependsOn": [
       73
     ],
@@ -584,17 +678,19 @@
     "title": "User Story 38, All Merchants fulfill items on an order"
   },
   {
-    "childOf": 1,
     "id": 47,
     "labels": [
-      "in progress",
+      "inbox",
       "merchant",
       "dashboard"
     ],
     "title": "Epic: Merchant Dashboard"
   },
   {
-    "childOf": 47,
+    "childOf": [
+      47,
+      1
+    ],
     "dependsOn": [
       10,
       6
@@ -608,7 +704,10 @@
     "title": "User Story 39, Merchant Dashboard Show Page"
   },
   {
-    "childOf": 47,
+    "childOf": [
+      47,
+      1
+    ],
     "dependsOn": [
       48
     ],
@@ -622,7 +721,10 @@
     "title": "User Story 40, Merchant Dashboard displays Orders"
   },
   {
-    "childOf": 47,
+    "childOf": [
+      47,
+      1
+    ],
     "dependsOn": [
       48
     ],
@@ -635,7 +737,10 @@
     "title": "User Story 41, Merchant Dashboard Statistics"
   },
   {
-    "childOf": 47,
+    "childOf": [
+      47,
+      1
+    ],
     "dependsOn": [
       23
     ],
@@ -648,7 +753,10 @@
     "title": "User Story 42, Merchant's Items index page"
   },
   {
-    "childOf": 47,
+    "childOf": [
+      47,
+      1
+    ],
     "id": 52,
     "labels": [
       "to do",
@@ -659,7 +767,10 @@
     "title": "User Story 43, Admin can see a merchant's dashboard"
   },
   {
-    "childOf": 47,
+    "childOf": [
+      47,
+      1
+    ],
     "id": 53,
     "labels": [
       "to do",
@@ -670,7 +781,10 @@
     "title": "User Story 44, Admin can downgrade a merchant to regular user"
   },
   {
-    "childOf": 47,
+    "childOf": [
+      47,
+      1
+    ],
     "id": 54,
     "labels": [
       "to do",
@@ -681,19 +795,18 @@
     "title": "User Story 45, Admin is redirected from Merchant Dashboard to User profile"
   },
   {
-    "childOf": 1,
-    "dependsOn": [
-      4
-    ],
     "id": 55,
     "labels": [
-      "in progress",
+      "inbox",
       "merchant"
     ],
     "title": "Epic: Merchant Index Page"
   },
   {
-    "childOf": 55,
+    "childOf": [
+      55,
+      1
+    ],
     "dependsOn": [
       4
     ],
@@ -705,7 +818,10 @@
     "title": "User Story 46, Merchant Index Page"
   },
   {
-    "childOf": 55,
+    "childOf": [
+      55,
+      1
+    ],
     "dependsOn": [
       56
     ],
@@ -718,7 +834,10 @@
     "title": "User Story 47, Merchant Index Page Statistics"
   },
   {
-    "childOf": 55,
+    "childOf": [
+      55,
+      1
+    ],
     "dependsOn": [
       56
     ],
@@ -731,7 +850,10 @@
     "title": "User Story 48, Admin visits Merchant Index Page"
   },
   {
-    "childOf": 55,
+    "childOf": [
+      55,
+      1
+    ],
     "dependsOn": [
       58
     ],
@@ -744,7 +866,10 @@
     "title": "User Story 49, Admin disables a merchant account"
   },
   {
-    "childOf": 55,
+    "childOf": [
+      55,
+      1
+    ],
     "dependsOn": [
       58
     ],
@@ -757,20 +882,19 @@
     "title": "User Story 50, Admin enables a merchant account"
   },
   {
-    "childOf": 1,
-    "dependsOn": [
-      48
-    ],
     "id": 61,
     "labels": [
-      "in progress",
+      "inbox",
       "merchant",
       "items"
     ],
     "title": "Epic: Merchant Items"
   },
   {
-    "childOf": 61,
+    "childOf": [
+      61,
+      1
+    ],
     "dependsOn": [
       48
     ],
@@ -783,7 +907,10 @@
     "title": "User Story 51, Merchant Items Index Page"
   },
   {
-    "childOf": 61,
+    "childOf": [
+      61,
+      1
+    ],
     "dependsOn": [
       62
     ],
@@ -796,7 +923,10 @@
     "title": "User Story 52, Merchant disables an item"
   },
   {
-    "childOf": 61,
+    "childOf": [
+      61,
+      1
+    ],
     "dependsOn": [
       62
     ],
@@ -809,7 +939,10 @@
     "title": "User Story 53, Merchant enables an item"
   },
   {
-    "childOf": 61,
+    "childOf": [
+      61,
+      1
+    ],
     "dependsOn": [
       62
     ],
@@ -822,7 +955,10 @@
     "title": "User Story 54, Merchant deletes an item"
   },
   {
-    "childOf": 61,
+    "childOf": [
+      61,
+      1
+    ],
     "dependsOn": [
       62
     ],
@@ -835,7 +971,10 @@
     "title": "User Story 55, Merchant adds an item"
   },
   {
-    "childOf": 61,
+    "childOf": [
+      61,
+      1
+    ],
     "dependsOn": [
       66
     ],
@@ -848,7 +987,10 @@
     "title": "User Story 56, Merchant cannot add an item if details are bad/missing"
   },
   {
-    "childOf": 61,
+    "childOf": [
+      61,
+      1
+    ],
     "dependsOn": [
       66
     ],
@@ -861,7 +1003,10 @@
     "title": "User Story 57, Merchant edits an item"
   },
   {
-    "childOf": 61,
+    "childOf": [
+      61,
+      1
+    ],
     "dependsOn": [
       68
     ],
@@ -874,7 +1019,10 @@
     "title": "User Story 58, Merchant cannot edit an item if details are bad/missing"
   },
   {
-    "childOf": 61,
+    "childOf": [
+      61,
+      1
+    ],
     "dependsOn": [
       62,
       66,
@@ -889,13 +1037,9 @@
     "title": "User Story 59, Admin can manage items on behalf of a merchant"
   },
   {
-    "childOf": 1,
-    "dependsOn": [
-      48
-    ],
     "id": 71,
     "labels": [
-      "in progress",
+      "inbox",
       "merchant",
       "items",
       "orders"
@@ -903,7 +1047,10 @@
     "title": "Epic: Merchant Order Fulfillment"
   },
   {
-    "childOf": 71,
+    "childOf": [
+      71,
+      1
+    ],
     "dependsOn": [
       49
     ],
@@ -917,7 +1064,10 @@
     "title": "User Story 60, Merchant sees an order show page"
   },
   {
-    "childOf": 71,
+    "childOf": [
+      71,
+      1
+    ],
     "dependsOn": [
       72
     ],
@@ -931,9 +1081,12 @@
     "title": "User Story 61, Merchant fulfills part of an order"
   },
   {
-    "childOf": 71,
+    "childOf": [
+      71,
+      1
+    ],
     "dependsOn": [
-      49
+      72
     ],
     "id": 74,
     "labels": [
@@ -945,7 +1098,10 @@
     "title": "User Story 62, Merchant cannot fulfill an order due to lack of inventory"
   },
   {
-    "childOf": 71,
+    "childOf": [
+      71,
+      1
+    ],
     "dependsOn": [
       73,
       74,
@@ -961,17 +1117,19 @@
     "title": "User Story 63, Admin can fulfill order items on behalf of a merchant"
   },
   {
-    "childOf": 1,
     "id": 76,
     "labels": [
-      "in progress",
+      "inbox",
       "admin",
       "user"
     ],
     "title": "Epic: Admin User Index Page"
   },
   {
-    "childOf": 76,
+    "childOf": [
+      76,
+      1
+    ],
     "dependsOn": [
       7
     ],
@@ -984,7 +1142,10 @@
     "title": "User Story 64, Admin User Index Page"
   },
   {
-    "childOf": 76,
+    "childOf": [
+      76,
+      1
+    ],
     "dependsOn": [
       77
     ],
@@ -997,7 +1158,10 @@
     "title": "User Story 65, Admin disables a user account"
   },
   {
-    "childOf": 76,
+    "childOf": [
+      76,
+      1
+    ],
     "dependsOn": [
       77
     ],

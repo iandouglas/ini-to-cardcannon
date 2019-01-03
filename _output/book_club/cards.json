@@ -2,13 +2,12 @@
   {
     "id": 1,
     "labels": [
-      "in progress",
+      "inbox",
       "app"
     ],
     "title": "Epic: Core Application"
   },
   {
-    "childOf": 1,
     "id": 2,
     "labels": [
       "to do",
@@ -17,16 +16,18 @@
     "title": "User Story 1, Deploy your application to Heroku"
   },
   {
-    "childOf": 1,
     "id": 3,
     "labels": [
-      "in progress",
+      "inbox",
       "navigation"
     ],
     "title": "Epic: Navigation"
   },
   {
-    "childOf": 3,
+    "childOf": [
+      3,
+      1
+    ],
     "id": 4,
     "labels": [
       "to do",
@@ -36,7 +37,10 @@
     "title": "User Story 2, Visitor Navigation"
   },
   {
-    "childOf": 3,
+    "childOf": [
+      3,
+      1
+    ],
     "dependsOn": [
       14
     ],
@@ -48,7 +52,10 @@
     "title": "User Story 3, All book titles are links to a show page"
   },
   {
-    "childOf": 3,
+    "childOf": [
+      3,
+      1
+    ],
     "dependsOn": [
       20
     ],
@@ -60,7 +67,10 @@
     "title": "User Story 4, All author names are links to a show page"
   },
   {
-    "childOf": 3,
+    "childOf": [
+      3,
+      1
+    ],
     "dependsOn": [
       23
     ],
@@ -72,16 +82,18 @@
     "title": "User Story 5, All user names are links to a show page"
   },
   {
-    "childOf": 1,
     "id": 8,
     "labels": [
-      "in progress",
+      "inbox",
       "books"
     ],
     "title": "Epic: Book Index Page"
   },
   {
-    "childOf": 8,
+    "childOf": [
+      8,
+      1
+    ],
     "id": 9,
     "labels": [
       "to do",
@@ -90,7 +102,10 @@
     "title": "User Story 6, Book Index Page"
   },
   {
-    "childOf": 8,
+    "childOf": [
+      8,
+      1
+    ],
     "dependsOn": [
       9
     ],
@@ -102,7 +117,10 @@
     "title": "User Story 7, Book Index Page shows Average Rating"
   },
   {
-    "childOf": 8,
+    "childOf": [
+      8,
+      1
+    ],
     "dependsOn": [
       9
     ],
@@ -114,7 +132,10 @@
     "title": "User Story 8, Book Index Page can be Sorted"
   },
   {
-    "childOf": 8,
+    "childOf": [
+      8,
+      1
+    ],
     "dependsOn": [
       9
     ],
@@ -127,19 +148,18 @@
     "title": "User Story 9, Book Index Page shows Statistics"
   },
   {
-    "childOf": 1,
-    "dependsOn": [
-      9
-    ],
     "id": 13,
     "labels": [
-      "in progress",
+      "inbox",
       "books"
     ],
     "title": "Epic: Book Show Page"
   },
   {
-    "childOf": 13,
+    "childOf": [
+      13,
+      1
+    ],
     "id": 14,
     "labels": [
       "to do",
@@ -148,7 +168,10 @@
     "title": "User Story 10, Book Show Page"
   },
   {
-    "childOf": 13,
+    "childOf": [
+      13,
+      1
+    ],
     "id": 15,
     "labels": [
       "to do",
@@ -158,17 +181,19 @@
     "title": "User Story 11, Book Show Page has Statistics"
   },
   {
-    "childOf": 1,
     "id": 16,
     "labels": [
-      "in progress",
+      "inbox",
       "books",
       "reviews"
     ],
     "title": "Epic: Adding new Books and Reviews"
   },
   {
-    "childOf": 16,
+    "childOf": [
+      16,
+      1
+    ],
     "dependsOn": [
       14
     ],
@@ -180,7 +205,10 @@
     "title": "User Story 12, Add a New Book to the System"
   },
   {
-    "childOf": 16,
+    "childOf": [
+      16,
+      1
+    ],
     "id": 18,
     "labels": [
       "to do",
@@ -190,16 +218,18 @@
     "title": "User Story 13, Add a Review for a Book"
   },
   {
-    "childOf": 1,
     "id": 19,
     "labels": [
-      "in progress",
+      "inbox",
       "authors"
     ],
     "title": "Epic: Author Show Page"
   },
   {
-    "childOf": 19,
+    "childOf": [
+      19,
+      1
+    ],
     "dependsOn": [
       17
     ],
@@ -212,7 +242,10 @@
     "title": "User Story 14, Author Show Page"
   },
   {
-    "childOf": 19,
+    "childOf": [
+      19,
+      1
+    ],
     "dependsOn": [
       20,
       18
@@ -227,16 +260,18 @@
     "title": "User Story 15, Author Show Page displays top review for each book"
   },
   {
-    "childOf": 1,
     "id": 22,
     "labels": [
-      "in progress",
+      "inbox",
       "reviews"
     ],
     "title": "Epic: User Show Page"
   },
   {
-    "childOf": 22,
+    "childOf": [
+      22,
+      1
+    ],
     "dependsOn": [
       18
     ],
@@ -248,7 +283,10 @@
     "title": "User Story 16, User Show Page"
   },
   {
-    "childOf": 22,
+    "childOf": [
+      22,
+      1
+    ],
     "dependsOn": [
       23
     ],
@@ -260,10 +298,9 @@
     "title": "User Story 17, User Show Page can sort reviews"
   },
   {
-    "childOf": 1,
     "id": 25,
     "labels": [
-      "in progress",
+      "inbox",
       "reviews",
       "books",
       "authors"
@@ -271,7 +308,10 @@
     "title": "Epic: Deleting Content"
   },
   {
-    "childOf": 25,
+    "childOf": [
+      25,
+      1
+    ],
     "dependsOn": [
       18,
       23
@@ -284,7 +324,10 @@
     "title": "User Story 18, User can delete a book review"
   },
   {
-    "childOf": 25,
+    "childOf": [
+      25,
+      1
+    ],
     "dependsOn": [
       14
     ],
@@ -296,7 +339,10 @@
     "title": "User Story 19, User can delete a book"
   },
   {
-    "childOf": 25,
+    "childOf": [
+      25,
+      1
+    ],
     "dependsOn": [
       20
     ],
@@ -310,12 +356,15 @@
   {
     "id": 29,
     "labels": [
-      "in progress"
+      "inbox"
     ],
     "title": "Epic: Extensions"
   },
   {
-    "childOf": 29,
+    "childOf": [
+      29,
+      1
+    ],
     "dependsOn": [
       23
     ],
@@ -327,7 +376,10 @@
     "title": "User Story 21, (EXTENSION 1/4) User reviews are sortable"
   },
   {
-    "childOf": 29,
+    "childOf": [
+      29,
+      1
+    ],
     "dependsOn": [
       18
     ],
@@ -339,7 +391,10 @@
     "title": "User Story 22, (EXTENSION 2/4) Review usernames are unique for a given book"
   },
   {
-    "childOf": 29,
+    "childOf": [
+      29,
+      1
+    ],
     "dependsOn": [
       9
     ],
@@ -351,7 +406,10 @@
     "title": "User Story 23, (EXTENSION 3/4) Book Index Page statistics shows top authors"
   },
   {
-    "childOf": 29,
+    "childOf": [
+      29,
+      1
+    ],
     "id": 33,
     "labels": [
       "to do"

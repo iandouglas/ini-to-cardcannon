@@ -72,8 +72,10 @@ def update_card_relationships(repo, cards, tracker)
       labels = issue.labels
 
       if card['childOf']
-        parent_issue = tracker[card['childOf']]
-        issue.body += "\n\nchild of ##{parent_issue}"
+        card['childOf'].each do |parent_card_id|
+          ddep_issue = tracker[parent_card_id]
+          issue.body += "\n\nchild of ##{ddep_issue}"
+        end
       end
 
       if card['dependsOn']
@@ -105,29 +107,29 @@ end
 # puts issue.inspect
 =begin
 {
-  :url=>"https://api.github.com/repos/iandouglas/github-scraper/issues/784", 
-  :repository_url=>"https://api.github.com/repos/iandouglas/github-scraper", 
-  :labels_url=>"https://api.github.com/repos/iandouglas/github-scraper/issues/784/labels{/name}", 
-  :comments_url=>"https://api.github.com/repos/iandouglas/github-scraper/issues/784/comments", 
-  :events_url=>"https://api.github.com/repos/iandouglas/github-scraper/issues/784/events", 
-  :html_url=>"https://github.com/iandouglas/github-scraper/issues/784", 
-  :id=>389452810, 
-  :node_id=>"MDU6SXNzdWUzODk0NTI4MTA=", 
-  :number=>784, 
-  :title=>"test from ian, please ignore!!", 
-  :user=>{:login=>"iandouglas", :id=>168030, :node_id=>"MDQ6VXNlcjE2ODAzMA==", :avatar_url=>"https://avatars0.githubusercontent.com/u/168030?v=4", :gravatar_id=>"", :url=>"https://api.github.com/users/iandouglas", :html_url=>"https://github.com/iandouglas", :followers_url=>"https://api.github.com/users/iandouglas/followers", :following_url=>"https://api.github.com/users/iandouglas/following{/other_user}", :gists_url=>"https://api.github.com/users/iandouglas/gists{/gist_id}", :starred_url=>"https://api.github.com/users/iandouglas/starred{/owner}{/repo}", :subscriptions_url=>"https://api.github.com/users/iandouglas/subscriptions", :organizations_url=>"https://api.github.com/users/iandouglas/orgs", :repos_url=>"https://api.github.com/users/iandouglas/repos", :events_url=>"https://api.github.com/users/iandouglas/events{/privacy}", :received_events_url=>"https://api.github.com/users/iandouglas/received_events", :type=>"User", :site_admin=>false}, 
-  :labels=>[], 
-  :state=>"open", 
-  :locked=>false, 
-  :assignee=>nil, 
-  :assignees=>[], 
-  :milestone=>nil, 
-  :comments=>0, 
-  :created_at=>2018-12-10 19:32:15 UTC, 
-  :updated_at=>2018-12-10 19:32:15 UTC, 
-  :closed_at=>nil, 
-  :author_association=>"OWNER", 
-  :body=>nil, 
+  :url=>"https://api.github.com/repos/iandouglas/github-scraper/issues/784",
+  :repository_url=>"https://api.github.com/repos/iandouglas/github-scraper",
+  :labels_url=>"https://api.github.com/repos/iandouglas/github-scraper/issues/784/labels{/name}",
+  :comments_url=>"https://api.github.com/repos/iandouglas/github-scraper/issues/784/comments",
+  :events_url=>"https://api.github.com/repos/iandouglas/github-scraper/issues/784/events",
+  :html_url=>"https://github.com/iandouglas/github-scraper/issues/784",
+  :id=>389452810,
+  :node_id=>"MDU6SXNzdWUzODk0NTI4MTA=",
+  :number=>784,
+  :title=>"test from ian, please ignore!!",
+  :user=>{:login=>"iandouglas", :id=>168030, :node_id=>"MDQ6VXNlcjE2ODAzMA==", :avatar_url=>"https://avatars0.githubusercontent.com/u/168030?v=4", :gravatar_id=>"", :url=>"https://api.github.com/users/iandouglas", :html_url=>"https://github.com/iandouglas", :followers_url=>"https://api.github.com/users/iandouglas/followers", :following_url=>"https://api.github.com/users/iandouglas/following{/other_user}", :gists_url=>"https://api.github.com/users/iandouglas/gists{/gist_id}", :starred_url=>"https://api.github.com/users/iandouglas/starred{/owner}{/repo}", :subscriptions_url=>"https://api.github.com/users/iandouglas/subscriptions", :organizations_url=>"https://api.github.com/users/iandouglas/orgs", :repos_url=>"https://api.github.com/users/iandouglas/repos", :events_url=>"https://api.github.com/users/iandouglas/events{/privacy}", :received_events_url=>"https://api.github.com/users/iandouglas/received_events", :type=>"User", :site_admin=>false},
+  :labels=>[],
+  :state=>"open",
+  :locked=>false,
+  :assignee=>nil,
+  :assignees=>[],
+  :milestone=>nil,
+  :comments=>0,
+  :created_at=>2018-12-10 19:32:15 UTC,
+  :updated_at=>2018-12-10 19:32:15 UTC,
+  :closed_at=>nil,
+  :author_association=>"OWNER",
+  :body=>nil,
   :closed_by=>nil
 }
 =end

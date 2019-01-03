@@ -2,13 +2,15 @@
   {
     "id": 1,
     "labels": [
-      "in progress",
+      "inbox",
       "app"
     ],
     "title": "Epic: Core Application"
   },
   {
-    "childOf": 1,
+    "childOf": [
+      1
+    ],
     "id": 2,
     "labels": [
       "to do",
@@ -17,7 +19,9 @@
     "title": "User Story 1, Great story title 1"
   },
   {
-    "childOf": 1,
+    "childOf": [
+      1
+    ],
     "dependsOn": [
       2
     ],
@@ -30,7 +34,9 @@
     "title": "User Story 2, Great story title 2"
   },
   {
-    "childOf": 1,
+    "childOf": [
+      1
+    ],
     "dependsOn": [
       2,
       3
@@ -41,5 +47,25 @@
       "label-3"
     ],
     "title": "User Story 3, Great story title 3"
+  },
+  {
+    "id": 5,
+    "labels": [
+      "inbox",
+      "app"
+    ],
+    "title": "Epic: Second Part of the Project"
+  },
+  {
+    "childOf": [
+      5,
+      1
+    ],
+    "id": 6,
+    "labels": [
+      "to do",
+      "label-1"
+    ],
+    "title": "User Story 4, Great story title 4"
   }
 ]
