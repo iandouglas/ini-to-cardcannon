@@ -3,7 +3,7 @@ BE Mod 2 Week 4/5 Group Project
 
 ## Background and Description
 
-"Little Shop of Orders" is a fictitious e-commerce platform where users can register to place items into a shopping cart and 'check out'. Merchant users can mark items as 'fulfilled', and Admins can mark orders as 'complete'. Each user role will have access to some or all CRUD functionality for application models.
+"Little Shop of Orders" is a fictitious e-commerce platform where users can register to place items into a shopping cart and 'check out'. Merchant users can mark their items as 'fulfilled'; the last merchant to mark items in an order as 'fulfilled' will automatically set the order status to "shipped". Each user role will have access to some or all CRUD functionality for application models.
 
 Students will be put into 3 or 4 person groups to complete the project.\n
 
@@ -46,9 +46,8 @@ Students will be put into 3 or 4 person groups to complete the project.\n
 
 ## Order Status
 
-1. 'pending' means a user has placed items in a cart and "checked out", but no merchant had fulfilled any items yet
-2. 'processing' means one or more merchants have fulfilled items from the order
-3. 'complete' means all merchants have fulfilled their items for the order
+1. 'pending' means a user has placed items in a cart and "checked out", merchants may or may not have fulfilled any items yet
+3. 'shipped' means all merchants have fulfilled their items for the order, and has been shipped
 4. 'cancelled' only 'pending' and 'processing' orders can be cancelled
 
 
@@ -325,8 +324,8 @@ User Story 15, Items Index Page Statistics
 As any kind of user on the system
 When I visit the items index page ("/items")
 I see an area with statistics:
-- the top 5 most popular items
-- the bottom 5 least popular items
+- the top 5 most popular items by quantity purchased, plus the quantity bought
+- the bottom 5 least popular items, plus the quantity bought
 
 "Popularity" is determined by total quantity of that item fulfilled
 ```
@@ -702,7 +701,7 @@ The same behaviors happen as if the user canceled the order themselves
 User Story 38, All Merchants fulfill items on an order
 
 When all items in an order have been "fulfilled" by their merchants
-The order status changes from "pending" to "complete"
+The order status changes from "pending" to "shipped"
 ```
 
 ---
@@ -746,13 +745,13 @@ User Story 41, Merchant Dashboard Statistics
 
 As a merchant
 When I visit my dashboard, I see an area with statistics:
-- top 5 items I have sold by quantity
+- top 5 items I have sold by quantity, and the quantity of each that I've sold
 - total quantity of items I've sold, and as a percentage against my sold units plus remaining inventory (eg, if I have sold 1,000 things and still have 9,000 things in inventory, the message would say something like "Sold 1,000 items, which is 10% of your total inventory")
-- top 3 states where my items were shipped
-- top 3 city/state where my items were shipped (Springfield, MI should not be grouped with Springfield, CO)
-- name of the user with the most orders from me (pick one if there's a tie)
-- name of the user who bought the most total items from me (pick one if there's a tie)
-- top 3 users who have spent the most money on my items
+- top 3 states where my items were shipped, and their quantities
+- top 3 city/state where my items were shipped, and their quantities (Springfield, MI should not be grouped with Springfield, CO)
+- name of the user with the most orders from me (pick one if there's a tie), and number of orders
+- name of the user who bought the most total items from me (pick one if there's a tie), and the total quantity
+- top 3 users who have spent the most money on my items, and the total amount they've spent
 ```
 
 ```
@@ -834,12 +833,12 @@ User Story 47, Merchant Index Page Statistics
 
 As a visitor
 When I visit the merchants index page, I see an area with statistics:
-- top 3 merchants who have sold the most by price and quantity
-- top 3 merchants who were fastest at fulfilling items in an order
-- worst 3 merchants who were slowest at fulfilling items in an order
-- top 3 states where any orders were shipped (by number of orders)
-- top 3 cities where any orders were shipped (by number of orders, also Springfield, MI should not be grouped with Springfield, CO)
-- top 3 biggest orders by quantity of items shipped in an order
+- top 3 merchants who have sold the most by price and quantity, and their revenue
+- top 3 merchants who were fastest at fulfilling items in an order, and their times
+- worst 3 merchants who were slowest at fulfilling items in an order, and their times
+- top 3 states where any orders were shipped (by number of orders), and count of orders
+- top 3 cities where any orders were shipped (by number of orders, also Springfield, MI should not be grouped with Springfield, CO), and the count of orders
+- top 3 biggest orders by quantity of items shipped in an order, plus their quantities
 ```
 
 ```
@@ -1043,7 +1042,7 @@ All content rules still apply (eg, item name cannot be blank, etc)
 ---
 
 ## Merchant Order Fulfillment
-Merchants must "fulfill" each ordered item for users. They will visit an order show page which will allow them to mark each item as fulfilled. Once every merchant marks their items for an order as "fulfilled" then the whole order switches its status to "completed". Merchants cannot fulfill items in an order if they do not have enough inventory in stock. If a user cancels an order after a merchant has fulfilled an item, the quantity of that item is returned to the merchant.
+Merchants must "fulfill" each ordered item for users. They will visit an order show page which will allow them to mark each item as fulfilled. Once every merchant marks their items for an order as "fulfilled" then the whole order switches its status to "shipped". Merchants cannot fulfill items in an order if they do not have enough inventory in stock. If a user cancels an order after a merchant has fulfilled an item, the quantity of that item is returned to the merchant.
 
 ### Admin functionality
 Admins can fulfill items in an order on behalf of a merchant.
