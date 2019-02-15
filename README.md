@@ -26,7 +26,7 @@ Structure your INI files in this format:
 ```
 [story-slug]
 title = Epic: Whatever
-labels: to do, whatever
+labels: whatever
 child_of: story-slug-of-parent
 story_text: line 1 of story
     line 2 of story
@@ -35,7 +35,7 @@ story_text: line 1 of story
 
 [story-slug-2]
 title = A Very Whatever Story
-labels: to do, whatever
+labels: whatever
 child_of: story-slug
 story_text: line 1 of story
     line 2 of story
@@ -44,7 +44,7 @@ story_text: line 1 of story
 
 [story-slug-3]
 title = A Very Whatever Story
-labels: to do, whatever
+labels: whatever
 child_of: story-slug
 depends_on: story-slug-2
 story_text: line 1 of story
@@ -54,11 +54,17 @@ story_text: line 1 of story
 
 ```
 
+#### Labels
+
+Labels are used mostly for project management tools to 'link' common-themed stories together across epics. For example, multiple epics might deal with a particular resource or module.
+
+The "build-cannon.py" script will also add two labels to each non-epic story: 'to do' and 'backlog'. Primarily these are for waffle.io. When these GitHub issues are generated and then initialize a waffle.io board, Waffle will move stories into a column named after that label. The "basic" waffle.io board uses a column called 'To Do', where the "advanced" waffle.io board uses a column called "Backlog". By adding both of these labels by default, Waffle should populate the board correctly no matter which board layout the students choose to initialize.
+
 #### Rationale/Excuses:
 
 - I use an equal (`=`) on the title line in case my titles need colons, like `Epic: Whatever`
-- the INI section markers are slug names, these get turned into ID values later
-- the script will process INI files in whatever natural order your OS reads them
+- the INI section markers are slug names, these get turned into ID values later and the strings are discarded
+- the script will process INI files in whatever natural order your OS reads them, typically alphabetically
 
 ### Run it
 

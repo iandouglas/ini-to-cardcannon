@@ -19,7 +19,7 @@ This purpose of this application is for users to browse and review books. The pr
 - must use PostgreSQL
 - all controller and model code must be tested via feature tests and model tests, respectively
 - must use some amount of HTML and CSS layout
-- must deploy project to Heroku
+- must deploy project to Heroku, do this early!
 
 
 ## Not Allowed
@@ -42,6 +42,7 @@ I will perform all user stories
 By visiting the application on Heroku.
 Localhost is fine for development, but
 the application must be hosted on Heroku.
+Do this earlier than later.
 ```
 
 ---

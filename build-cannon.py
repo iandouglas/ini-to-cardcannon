@@ -77,7 +77,7 @@ for filename in os.listdir(path):
             bits = config.items(section_name)
             story = {
                 'title': config.get(section_name, 'title'),
-                'labels': [x.strip() for x in config.get(section_name, 'labels').split(',')],
+                'labels': ['to do', 'backlog'] + [x.strip() for x in config.get(section_name, 'labels').split(',')],
                 'id': len(stories) + 1
             }
             if config.get(section_name, 'title') in story_titles:
