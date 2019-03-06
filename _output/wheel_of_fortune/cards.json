@@ -1,0 +1,477 @@
+[
+  {
+    "id": 1,
+    "labels": [
+      "to do",
+      "backlog",
+      "inbox",
+      "app"
+    ],
+    "title": "Epic: Core Application"
+  },
+  {
+    "id": 2,
+    "labels": [
+      "to do",
+      "backlog",
+      "inbox",
+      "app"
+    ],
+    "title": "Epic: Game Mechanics"
+  },
+  {
+    "childOf": [
+      2,
+      1
+    ],
+    "id": 3,
+    "labels": [
+      "to do",
+      "backlog",
+      "mechanics"
+    ],
+    "title": "User Story 1, Basic Game Mechanics"
+  },
+  {
+    "childOf": [
+      2,
+      1
+    ],
+    "id": 4,
+    "labels": [
+      "to do",
+      "backlog",
+      "mechanics",
+      "puzzle"
+    ],
+    "title": "User Story 2, Game Mechanics, Puzzles"
+  },
+  {
+    "childOf": [
+      2,
+      1
+    ],
+    "id": 5,
+    "labels": [
+      "to do",
+      "backlog",
+      "mechanics",
+      "wheel"
+    ],
+    "title": "User Story 3, Game Mechanics, Wheels"
+  },
+  {
+    "childOf": [
+      2,
+      1
+    ],
+    "dependsOn": [
+      3
+    ],
+    "id": 6,
+    "labels": [
+      "to do",
+      "backlog",
+      "game",
+      "ui"
+    ],
+    "title": "User Story 4, Beginning a Game"
+  },
+  {
+    "childOf": [
+      2,
+      1
+    ],
+    "dependsOn": [
+      6
+    ],
+    "id": 7,
+    "labels": [
+      "to do",
+      "backlog",
+      "game",
+      "ui"
+    ],
+    "title": "User Story 5, Setting Up a New Game"
+  },
+  {
+    "id": 8,
+    "labels": [
+      "to do",
+      "backlog",
+      "inbox",
+      "app",
+      "round"
+    ],
+    "title": "Epic: Playing a Round"
+  },
+  {
+    "childOf": [
+      8,
+      1
+    ],
+    "dependsOn": [
+      7,
+      5,
+      4
+    ],
+    "id": 9,
+    "labels": [
+      "to do",
+      "backlog",
+      "round",
+      "puzzle"
+    ],
+    "title": "User Story 6, Playing a Round, Step 1"
+  },
+  {
+    "childOf": [
+      8,
+      1
+    ],
+    "dependsOn": [
+      9
+    ],
+    "id": 10,
+    "labels": [
+      "to do",
+      "backlog",
+      "round",
+      "ui"
+    ],
+    "title": "User Story 7, Playing a Round, Step 2"
+  },
+  {
+    "childOf": [
+      8,
+      1
+    ],
+    "dependsOn": [
+      10
+    ],
+    "id": 11,
+    "labels": [
+      "to do",
+      "backlog",
+      "round",
+      "ui"
+    ],
+    "title": "User Story 8, Playing a Round, Step 3"
+  },
+  {
+    "childOf": [
+      8,
+      1
+    ],
+    "dependsOn": [
+      10,
+      19,
+      13
+    ],
+    "id": 12,
+    "labels": [
+      "to do",
+      "backlog",
+      "round",
+      "ui"
+    ],
+    "title": "User Story 9, Playing a Round, Step 4"
+  },
+  {
+    "dependsOn": [
+      11
+    ],
+    "id": 13,
+    "labels": [
+      "to do",
+      "backlog",
+      "game",
+      "ui"
+    ],
+    "title": "User Story 10, Buying a vowel"
+  },
+  {
+    "id": 14,
+    "labels": [
+      "to do",
+      "backlog",
+      "inbox",
+      "app",
+      "wheel"
+    ],
+    "title": "Epic: Spinning the Wheel"
+  },
+  {
+    "childOf": [
+      14,
+      1
+    ],
+    "dependsOn": [
+      11
+    ],
+    "id": 15,
+    "labels": [
+      "to do",
+      "backlog",
+      "wheel",
+      "ui"
+    ],
+    "title": "User Story 11, Spin the Wheel, Step 1"
+  },
+  {
+    "childOf": [
+      14,
+      1
+    ],
+    "dependsOn": [
+      15
+    ],
+    "id": 16,
+    "labels": [
+      "to do",
+      "backlog",
+      "wheel",
+      "ui"
+    ],
+    "title": "User Story 12, Spin the Wheel, Losing a Turn"
+  },
+  {
+    "childOf": [
+      14,
+      1
+    ],
+    "dependsOn": [
+      15
+    ],
+    "id": 17,
+    "labels": [
+      "to do",
+      "backlog",
+      "wheel",
+      "ui"
+    ],
+    "title": "User Story 13, Spin the Wheel, Bankruptcy"
+  },
+  {
+    "childOf": [
+      14,
+      1
+    ],
+    "dependsOn": [
+      15
+    ],
+    "id": 18,
+    "labels": [
+      "to do",
+      "backlog",
+      "wheel",
+      "ui"
+    ],
+    "title": "User Story 14, Spin the Wheel, in a regular round, landing on money"
+  },
+  {
+    "childOf": [
+      14,
+      1
+    ],
+    "dependsOn": [
+      15
+    ],
+    "id": 19,
+    "labels": [
+      "to do",
+      "backlog",
+      "wheel",
+      "ui"
+    ],
+    "title": "User Story 15, Spin the Wheel, choosing a valid consonant"
+  },
+  {
+    "childOf": [
+      14,
+      1
+    ],
+    "dependsOn": [
+      19
+    ],
+    "id": 20,
+    "labels": [
+      "to do",
+      "backlog",
+      "wheel",
+      "ui"
+    ],
+    "title": "User Story 16, Spin the Wheel, Choosing an invalid consonant"
+  },
+  {
+    "id": 21,
+    "labels": [
+      "to do",
+      "backlog",
+      "inbox",
+      "app",
+      "wheel"
+    ],
+    "title": "Epic: Solving the Puzzle"
+  },
+  {
+    "childOf": [
+      21,
+      1
+    ],
+    "dependsOn": [
+      11
+    ],
+    "id": 22,
+    "labels": [
+      "to do",
+      "backlog",
+      "solving",
+      "ui"
+    ],
+    "title": "User Story 17, Solving the Puzzle, Step 1"
+  },
+  {
+    "childOf": [
+      21,
+      1
+    ],
+    "dependsOn": [
+      22
+    ],
+    "id": 23,
+    "labels": [
+      "to do",
+      "backlog",
+      "solving"
+    ],
+    "title": "User Story 18, Solving the Puzzle, Step 2"
+  },
+  {
+    "id": 24,
+    "labels": [
+      "to do",
+      "backlog",
+      "inbox",
+      "app",
+      "wheel"
+    ],
+    "title": "Epic: Bonus Round"
+  },
+  {
+    "childOf": [
+      24,
+      1
+    ],
+    "dependsOn": [
+      23
+    ],
+    "id": 25,
+    "labels": [
+      "to do",
+      "backlog",
+      "bonus-round"
+    ],
+    "title": "User Story 19, Solving the puzzle ends the round"
+  },
+  {
+    "childOf": [
+      24,
+      1
+    ],
+    "dependsOn": [
+      25
+    ],
+    "id": 26,
+    "labels": [
+      "to do",
+      "backlog",
+      "bonus-round",
+      "ui"
+    ],
+    "title": "User Story 20, Picking a Winner"
+  },
+  {
+    "childOf": [
+      24,
+      1
+    ],
+    "dependsOn": [
+      26
+    ],
+    "id": 27,
+    "labels": [
+      "to do",
+      "backlog",
+      "bonus-round",
+      "ui",
+      "puzzle",
+      "wheel"
+    ],
+    "title": "User Story 21, Bonus Round, Part 1"
+  },
+  {
+    "childOf": [
+      24,
+      1
+    ],
+    "dependsOn": [
+      27
+    ],
+    "id": 28,
+    "labels": [
+      "to do",
+      "backlog",
+      "bonus-round",
+      "ui"
+    ],
+    "title": "User Story 22, Bonus Round, Part 2"
+  },
+  {
+    "dependsOn": [
+      28
+    ],
+    "id": 29,
+    "labels": [
+      "to do",
+      "backlog",
+      "bonus-round",
+      "ui"
+    ],
+    "title": "User Story 23, Bonus Round, Part 3"
+  },
+  {
+    "childOf": [
+      24,
+      1
+    ],
+    "dependsOn": [
+      29
+    ],
+    "id": 30,
+    "labels": [
+      "to do",
+      "backlog",
+      "bonus-round",
+      "ui"
+    ],
+    "title": "User Story 24, Bonus Round, Part 4"
+  },
+  {
+    "childOf": [
+      24,
+      1
+    ],
+    "dependsOn": [
+      29
+    ],
+    "id": 31,
+    "labels": [
+      "to do",
+      "backlog",
+      "bonus-round",
+      "ui"
+    ],
+    "title": "User Story 25, Bonus Round, Part 5"
+  }
+]

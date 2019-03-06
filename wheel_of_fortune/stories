@@ -1,0 +1,69 @@
+games:
+- have 3 players
+- have 4 rounds
+- winner has highest accumulated "account" total after 4th round
+
+players:
+- start with an "account" of $0
+- sees a score indicating that round's accumulated money next to their name
+- can quit and start a new game at any time
+
+start of each round:
+- a random "puzzle" word is chosen when the round starts
+- a randomized "wheel" is chosen
+- all letters are hidden from players; UI shows clear indications of letters/spaces
+- puzzle category is displayed to all players
+- players have a temporary accumulated score of $0
+
+during the round:
+- UI updates to show which letters have already been guessed
+- players choose one of three options when it's their turn:
+  - solve the puzzle
+    - if I solve correctly:
+      - the round is over and my accumulated money is added to my "account" score
+      - all other players lose any accumulated money during that round only
+    - if I do not solve correctly, my turn is over
+
+  - spin the wheel
+    - if I land on "lose your turn", my turn ends
+    - if I land on "bankruptcy", my accumulated money for that round is reset to $0
+    - if I land on a dollar amount:
+      - I choose a consonant
+      - if that consonant was previously guessed, I am prompted to guess again
+      - if that consonant is a valid letter in the puzzle:
+        - each instance of that letter is revealed in the puzzle
+        - my accumulated money for that round is increased by the dollar amount multiplied by the number of letters newly revealed
+        - my turn continues
+      - if that consonant is not a valid letter in the puzzle, my turn is over
+
+  - buy a vowel
+    - I am prompted to choose a vowel
+    - if that vowel was previously guessed, I am prompted to guess again
+    - my accumulated score is reduced by $100 regardless if I choose a correct vowel
+
+
+ending a round:
+- round is finished when a player solves the puzzle word correctly
+- winner has their accumulated money added to their "account" score
+
+bonus round:
+- winner does a bonus round alone, with a bonus puzzle word, and a bonus wheel
+- a new puzzle word/phrase is chosen that contains a minimum of 6 consonants
+- a new wheel is chosen without bankruptcy spaces; player spins the wheel to reveal their money/prize to win in that round
+- player is prompted to pick 1 vowel and 3 consonants; correct choices are revealed on the puzzle; no money is added to their accumulated round score.
+- is asked to solve the puzzle
+  - If I guess correctly:
+    - the prize or cash award from the bonus wheel is added to my "account" score
+  - If I guess incorrectly, I do not win the additional money/prize for that round
+  - My total "account" score is shown on the UI
+
+puzzles:
+- game chooses least one bank of puzzle words/phrases
+- each word puzzle has a category like "phrase", "person", "things" etc
+
+wheels:
+- a wheel must have at least 6 elements; each element is one of the following:
+  - positive dollar amount
+  - lose a turn
+  - bankruptcy
+- the wheel for the bonus round will be special prizes or positive dollar amounts
