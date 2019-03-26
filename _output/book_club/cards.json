@@ -2,7 +2,7 @@
   {
     "id": 1,
     "labels": [
-      "to do",
+      "to-do",
       "backlog",
       "inbox",
       "app"
@@ -12,7 +12,7 @@
   {
     "id": 2,
     "labels": [
-      "to do",
+      "to-do",
       "backlog",
       "heroku"
     ],
@@ -21,7 +21,7 @@
   {
     "id": 3,
     "labels": [
-      "to do",
+      "to-do",
       "backlog",
       "inbox",
       "navigation"
@@ -35,7 +35,7 @@
     ],
     "id": 4,
     "labels": [
-      "to do",
+      "to-do",
       "backlog",
       "navigation",
       "visitor"
@@ -52,7 +52,7 @@
     ],
     "id": 5,
     "labels": [
-      "to do",
+      "to-do",
       "backlog",
       "navigation"
     ],
@@ -68,7 +68,7 @@
     ],
     "id": 6,
     "labels": [
-      "to do",
+      "to-do",
       "backlog",
       "navigation"
     ],
@@ -84,7 +84,7 @@
     ],
     "id": 7,
     "labels": [
-      "to do",
+      "to-do",
       "backlog",
       "navigation"
     ],
@@ -93,7 +93,7 @@
   {
     "id": 8,
     "labels": [
-      "to do",
+      "to-do",
       "backlog",
       "inbox",
       "books"
@@ -107,7 +107,7 @@
     ],
     "id": 9,
     "labels": [
-      "to do",
+      "to-do",
       "backlog",
       "books"
     ],
@@ -123,7 +123,7 @@
     ],
     "id": 10,
     "labels": [
-      "to do",
+      "to-do",
       "backlog",
       "books"
     ],
@@ -139,7 +139,7 @@
     ],
     "id": 11,
     "labels": [
-      "to do",
+      "to-do",
       "backlog",
       "books"
     ],
@@ -155,7 +155,7 @@
     ],
     "id": 12,
     "labels": [
-      "to do",
+      "to-do",
       "backlog",
       "books",
       "statistics"
@@ -165,7 +165,7 @@
   {
     "id": 13,
     "labels": [
-      "to do",
+      "to-do",
       "backlog",
       "inbox",
       "books"
@@ -179,7 +179,7 @@
     ],
     "id": 14,
     "labels": [
-      "to do",
+      "to-do",
       "backlog",
       "books"
     ],
@@ -192,7 +192,7 @@
     ],
     "id": 15,
     "labels": [
-      "to do",
+      "to-do",
       "backlog",
       "books",
       "statistics"
@@ -202,7 +202,7 @@
   {
     "id": 16,
     "labels": [
-      "to do",
+      "to-do",
       "backlog",
       "inbox",
       "books",
@@ -220,7 +220,7 @@
     ],
     "id": 17,
     "labels": [
-      "to do",
+      "to-do",
       "backlog",
       "books"
     ],
@@ -233,7 +233,7 @@
     ],
     "id": 18,
     "labels": [
-      "to do",
+      "to-do",
       "backlog",
       "books",
       "reviews"
@@ -243,7 +243,7 @@
   {
     "id": 19,
     "labels": [
-      "to do",
+      "to-do",
       "backlog",
       "inbox",
       "authors"
@@ -260,7 +260,7 @@
     ],
     "id": 20,
     "labels": [
-      "to do",
+      "to-do",
       "backlog",
       "authors",
       "books"
@@ -278,7 +278,7 @@
     ],
     "id": 21,
     "labels": [
-      "to do",
+      "to-do",
       "backlog",
       "authors",
       "books",
@@ -289,7 +289,7 @@
   {
     "id": 22,
     "labels": [
-      "to do",
+      "to-do",
       "backlog",
       "inbox",
       "reviews"
@@ -306,7 +306,7 @@
     ],
     "id": 23,
     "labels": [
-      "to do",
+      "to-do",
       "backlog",
       "reviews"
     ],
@@ -322,7 +322,7 @@
     ],
     "id": 24,
     "labels": [
-      "to do",
+      "to-do",
       "backlog",
       "reviews"
     ],
@@ -331,7 +331,7 @@
   {
     "id": 25,
     "labels": [
-      "to do",
+      "to-do",
       "backlog",
       "inbox",
       "reviews",
@@ -351,7 +351,7 @@
     ],
     "id": 26,
     "labels": [
-      "to do",
+      "to-do",
       "backlog",
       "reviews"
     ],
@@ -367,7 +367,7 @@
     ],
     "id": 27,
     "labels": [
-      "to do",
+      "to-do",
       "backlog",
       "books"
     ],
@@ -383,7 +383,7 @@
     ],
     "id": 28,
     "labels": [
-      "to do",
+      "to-do",
       "backlog",
       "authors"
     ],
@@ -392,7 +392,7 @@
   {
     "id": 29,
     "labels": [
-      "to do",
+      "to-do",
       "backlog",
       "inbox"
     ],
@@ -408,7 +408,7 @@
     ],
     "id": 30,
     "labels": [
-      "to do",
+      "to-do",
       "backlog",
       "reviews"
     ],
@@ -424,7 +424,7 @@
     ],
     "id": 31,
     "labels": [
-      "to do",
+      "to-do",
       "backlog",
       "reviews"
     ],
@@ -440,7 +440,7 @@
     ],
     "id": 32,
     "labels": [
-      "to do",
+      "to-do",
       "backlog",
       "reviews"
     ],
@@ -453,7 +453,7 @@
     ],
     "id": 33,
     "labels": [
-      "to do",
+      "to-do",
       "backlog",
       "to do"
     ],

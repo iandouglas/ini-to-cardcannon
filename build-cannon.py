@@ -66,6 +66,21 @@ def get_id_by_slug(slug):
         deps.append(stories[story_slug]['id'])
     return deps
 
+def get_titles_by_slug(slug):
+    global stories
+    deps = []
+    dep_slugs = []
+    if isinstance(slug, list):
+        dep_slugs = slug
+    else:
+        if ',' in slug:
+            dep_slugs = [x.strip() for x in slug.split(',')]
+        else:
+            dep_slugs = [slug]
+    for story_slug in dep_slugs:
+        deps.append('- ' + stories[story_slug]['title'])
+    return deps
+
 id = 1
 path = './{}/'.format(project)
 for filename in os.listdir(path):
@@ -77,7 +92,7 @@ for filename in os.listdir(path):
             bits = config.items(section_name)
             story = {
                 'title': config.get(section_name, 'title'),
-                'labels': ['to do', 'backlog'] + [x.strip() for x in config.get(section_name, 'labels').split(',')],
+                'labels': [x.strip() for x in config.get(section_name, 'labels').split(',')],
                 'id': len(stories) + 1
             }
             if config.get(section_name, 'title') in story_titles:
@@ -131,6 +146,7 @@ with open('_output/{}/cards.json'.format(project), 'w') as f:
             del story['child_of']
         if 'depends_on' in story:
             story['dependsOn'] = get_id_by_slug(story['depends_on'])
+            story['dep_titles'] = get_titles_by_slug(story['depends_on'])
             del story['depends_on']
         if 'slug' in story:
             del story['slug']
@@ -138,7 +154,10 @@ with open('_output/{}/cards.json'.format(project), 'w') as f:
             if 'Epic:' in story['title']:
                 f2.write("{}".format(story['story_text']))
             else:
-                f2.write("```\n{}\n```\n\n{}".format(story['story_text'], CHECKLIST))
+                dependencies = ""
+                if 'dep_titles' in story and len(story['dep_titles']) > 0:
+                    dependencies = "\n\nDO THESE STORIES FIRST:\n" + "\n".join(story['dep_titles'])
+                f2.write("```\n{}\n```{}\n\n{}".format(story['story_text'], dependencies, CHECKLIST))
         if 'story_text' in story:
             del story['story_text']
         waffle_stories.append(story)
