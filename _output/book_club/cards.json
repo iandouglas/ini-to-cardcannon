@@ -2,8 +2,6 @@
   {
     "id": 1,
     "labels": [
-      "to-do",
-      "backlog",
       "inbox",
       "app"
     ],
@@ -12,8 +10,6 @@
   {
     "id": 2,
     "labels": [
-      "to-do",
-      "backlog",
       "heroku"
     ],
     "title": "User Story 1, Deploy your application to Heroku"
@@ -21,8 +17,6 @@
   {
     "id": 3,
     "labels": [
-      "to-do",
-      "backlog",
       "inbox",
       "navigation"
     ],
@@ -35,8 +29,6 @@
     ],
     "id": 4,
     "labels": [
-      "to-do",
-      "backlog",
       "navigation",
       "visitor"
     ],
@@ -47,13 +39,14 @@
       3,
       1
     ],
+    "dep_titles": [
+      "- User Story 10, Book Show Page"
+    ],
     "dependsOn": [
       14
     ],
     "id": 5,
     "labels": [
-      "to-do",
-      "backlog",
       "navigation"
     ],
     "title": "User Story 3, All book titles are links to a show page"
@@ -63,13 +56,14 @@
       3,
       1
     ],
+    "dep_titles": [
+      "- User Story 14, Author Show Page"
+    ],
     "dependsOn": [
       20
     ],
     "id": 6,
     "labels": [
-      "to-do",
-      "backlog",
       "navigation"
     ],
     "title": "User Story 4, All author names are links to a show page"
@@ -79,13 +73,14 @@
       3,
       1
     ],
+    "dep_titles": [
+      "- User Story 16, User Show Page"
+    ],
     "dependsOn": [
       23
     ],
     "id": 7,
     "labels": [
-      "to-do",
-      "backlog",
       "navigation"
     ],
     "title": "User Story 5, All user names are links to a show page"
@@ -93,8 +88,6 @@
   {
     "id": 8,
     "labels": [
-      "to-do",
-      "backlog",
       "inbox",
       "books"
     ],
@@ -107,8 +100,6 @@
     ],
     "id": 9,
     "labels": [
-      "to-do",
-      "backlog",
       "books"
     ],
     "title": "User Story 6, Book Index Page"
@@ -118,13 +109,14 @@
       8,
       1
     ],
+    "dep_titles": [
+      "- User Story 6, Book Index Page"
+    ],
     "dependsOn": [
       9
     ],
     "id": 10,
     "labels": [
-      "to-do",
-      "backlog",
       "books"
     ],
     "title": "User Story 7, Book Index Page shows Average Rating"
@@ -134,13 +126,14 @@
       8,
       1
     ],
+    "dep_titles": [
+      "- User Story 6, Book Index Page"
+    ],
     "dependsOn": [
       9
     ],
     "id": 11,
     "labels": [
-      "to-do",
-      "backlog",
       "books"
     ],
     "title": "User Story 8, Book Index Page can be Sorted"
@@ -150,13 +143,14 @@
       8,
       1
     ],
+    "dep_titles": [
+      "- User Story 6, Book Index Page"
+    ],
     "dependsOn": [
       9
     ],
     "id": 12,
     "labels": [
-      "to-do",
-      "backlog",
       "books",
       "statistics"
     ],
@@ -165,8 +159,6 @@
   {
     "id": 13,
     "labels": [
-      "to-do",
-      "backlog",
       "inbox",
       "books"
     ],
@@ -179,8 +171,6 @@
     ],
     "id": 14,
     "labels": [
-      "to-do",
-      "backlog",
       "books"
     ],
     "title": "User Story 10, Book Show Page"
@@ -192,8 +182,6 @@
     ],
     "id": 15,
     "labels": [
-      "to-do",
-      "backlog",
       "books",
       "statistics"
     ],
@@ -202,8 +190,6 @@
   {
     "id": 16,
     "labels": [
-      "to-do",
-      "backlog",
       "inbox",
       "books",
       "reviews"
@@ -215,13 +201,14 @@
       16,
       1
     ],
+    "dep_titles": [
+      "- User Story 10, Book Show Page"
+    ],
     "dependsOn": [
       14
     ],
     "id": 17,
     "labels": [
-      "to-do",
-      "backlog",
       "books"
     ],
     "title": "User Story 12, Add a New Book to the System"
@@ -233,8 +220,6 @@
     ],
     "id": 18,
     "labels": [
-      "to-do",
-      "backlog",
       "books",
       "reviews"
     ],
@@ -243,8 +228,6 @@
   {
     "id": 19,
     "labels": [
-      "to-do",
-      "backlog",
       "inbox",
       "authors"
     ],
@@ -255,13 +238,14 @@
       19,
       1
     ],
+    "dep_titles": [
+      "- User Story 12, Add a New Book to the System"
+    ],
     "dependsOn": [
       17
     ],
     "id": 20,
     "labels": [
-      "to-do",
-      "backlog",
       "authors",
       "books"
     ],
@@ -272,14 +256,16 @@
       19,
       1
     ],
+    "dep_titles": [
+      "- User Story 14, Author Show Page",
+      "- User Story 13, Add a Review for a Book"
+    ],
     "dependsOn": [
       20,
       18
     ],
     "id": 21,
     "labels": [
-      "to-do",
-      "backlog",
       "authors",
       "books",
       "reviews"
@@ -289,8 +275,6 @@
   {
     "id": 22,
     "labels": [
-      "to-do",
-      "backlog",
       "inbox",
       "reviews"
     ],
@@ -301,13 +285,14 @@
       22,
       1
     ],
+    "dep_titles": [
+      "- User Story 13, Add a Review for a Book"
+    ],
     "dependsOn": [
       18
     ],
     "id": 23,
     "labels": [
-      "to-do",
-      "backlog",
       "reviews"
     ],
     "title": "User Story 16, User Show Page"
@@ -317,13 +302,14 @@
       22,
       1
     ],
+    "dep_titles": [
+      "- User Story 16, User Show Page"
+    ],
     "dependsOn": [
       23
     ],
     "id": 24,
     "labels": [
-      "to-do",
-      "backlog",
       "reviews"
     ],
     "title": "User Story 17, User Show Page can sort reviews"
@@ -331,8 +317,6 @@
   {
     "id": 25,
     "labels": [
-      "to-do",
-      "backlog",
       "inbox",
       "reviews",
       "books",
@@ -345,14 +329,16 @@
       25,
       1
     ],
+    "dep_titles": [
+      "- User Story 13, Add a Review for a Book",
+      "- User Story 16, User Show Page"
+    ],
     "dependsOn": [
       18,
       23
     ],
     "id": 26,
     "labels": [
-      "to-do",
-      "backlog",
       "reviews"
     ],
     "title": "User Story 18, User can delete a book review"
@@ -362,13 +348,14 @@
       25,
       1
     ],
+    "dep_titles": [
+      "- User Story 10, Book Show Page"
+    ],
     "dependsOn": [
       14
     ],
     "id": 27,
     "labels": [
-      "to-do",
-      "backlog",
       "books"
     ],
     "title": "User Story 19, User can delete a book"
@@ -378,13 +365,14 @@
       25,
       1
     ],
+    "dep_titles": [
+      "- User Story 14, Author Show Page"
+    ],
     "dependsOn": [
       20
     ],
     "id": 28,
     "labels": [
-      "to-do",
-      "backlog",
       "authors"
     ],
     "title": "User Story 20, User can delete an author"
@@ -392,8 +380,6 @@
   {
     "id": 29,
     "labels": [
-      "to-do",
-      "backlog",
       "inbox"
     ],
     "title": "Epic: Extensions"
@@ -403,13 +389,14 @@
       29,
       1
     ],
+    "dep_titles": [
+      "- User Story 16, User Show Page"
+    ],
     "dependsOn": [
       23
     ],
     "id": 30,
     "labels": [
-      "to-do",
-      "backlog",
       "reviews"
     ],
     "title": "User Story 21, (EXTENSION 1/4) User reviews are sortable"
@@ -419,13 +406,14 @@
       29,
       1
     ],
+    "dep_titles": [
+      "- User Story 13, Add a Review for a Book"
+    ],
     "dependsOn": [
       18
     ],
     "id": 31,
     "labels": [
-      "to-do",
-      "backlog",
       "reviews"
     ],
     "title": "User Story 22, (EXTENSION 2/4) Review usernames are unique for a given book"
@@ -435,13 +423,14 @@
       29,
       1
     ],
+    "dep_titles": [
+      "- User Story 6, Book Index Page"
+    ],
     "dependsOn": [
       9
     ],
     "id": 32,
     "labels": [
-      "to-do",
-      "backlog",
       "reviews"
     ],
     "title": "User Story 23, (EXTENSION 3/4) Book Index Page statistics shows top authors"
@@ -453,8 +442,6 @@
     ],
     "id": 33,
     "labels": [
-      "to-do",
-      "backlog",
       "to do"
     ],
     "title": "User Story 24, (EXTENSION 4/4) Spend any extra time on HTML/CSS"
