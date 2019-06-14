@@ -1,0 +1,194 @@
+[
+  {
+    "id": 1,
+    "labels": [
+      "inbox",
+      "app"
+    ],
+    "title": "Epic: Core Application"
+  },
+  {
+    "id": 2,
+    "labels": [
+      "merchants"
+    ],
+    "title": "Epic: Merchants"
+  },
+  {
+    "childOf": [
+      2,
+      1
+    ],
+    "id": 3,
+    "labels": [
+      "merchants"
+    ],
+    "title": "User Story 1, Merchant Index"
+  },
+  {
+    "childOf": [
+      2,
+      1
+    ],
+    "id": 4,
+    "labels": [
+      "merchants"
+    ],
+    "title": "User Story 2, Merchant Show"
+  },
+  {
+    "childOf": [
+      2,
+      1
+    ],
+    "dep_titles": [
+      "- User Story 1, Merchant Index"
+    ],
+    "dependsOn": [
+      3
+    ],
+    "id": 5,
+    "labels": [
+      "merchants"
+    ],
+    "title": "User Story 3, Merchant Creation"
+  },
+  {
+    "childOf": [
+      2,
+      1
+    ],
+    "dep_titles": [
+      "- User Story 2, Merchant Show"
+    ],
+    "dependsOn": [
+      4
+    ],
+    "id": 6,
+    "labels": [
+      "merchants"
+    ],
+    "title": "User Story 4, Merchant Update"
+  },
+  {
+    "childOf": [
+      2,
+      1
+    ],
+    "dep_titles": [
+      "- User Story 2, Merchant Show"
+    ],
+    "dependsOn": [
+      4
+    ],
+    "id": 7,
+    "labels": [
+      "merchants"
+    ],
+    "title": "User Story 5, Merchant Delete"
+  },
+  {
+    "id": 8,
+    "labels": [
+      "items"
+    ],
+    "title": "Epic: Items"
+  },
+  {
+    "childOf": [
+      8,
+      1
+    ],
+    "id": 9,
+    "labels": [
+      "items"
+    ],
+    "title": "User Story 6, Merchant Items Index"
+  },
+  {
+    "childOf": [
+      8,
+      1
+    ],
+    "id": 10,
+    "labels": [
+      "items"
+    ],
+    "title": "User Story 7, Item Show"
+  },
+  {
+    "childOf": [
+      8,
+      1
+    ],
+    "dep_titles": [
+      "- User Story 6, Merchant Items Index"
+    ],
+    "dependsOn": [
+      9
+    ],
+    "id": 11,
+    "labels": [
+      "items"
+    ],
+    "title": "User Story 8, Merchant Item Creation"
+  },
+  {
+    "childOf": [
+      8,
+      1
+    ],
+    "dep_titles": [
+      "- User Story 7, Item Show"
+    ],
+    "dependsOn": [
+      10
+    ],
+    "id": 12,
+    "labels": [
+      "items"
+    ],
+    "title": "User Story 9, Item Update"
+  },
+  {
+    "id": 13,
+    "labels": [
+      "extensions"
+    ],
+    "title": "Epic: Extensions"
+  },
+  {
+    "childOf": [
+      13,
+      1
+    ],
+    "dep_titles": [
+      "- User Story 6, Merchant Items Index"
+    ],
+    "dependsOn": [
+      9
+    ],
+    "id": 14,
+    "labels": [
+      "items"
+    ],
+    "title": "User Story 10, Item Filter by Active Status"
+  },
+  {
+    "childOf": [
+      13,
+      1
+    ],
+    "dep_titles": [
+      "- User Story 7, Item Show"
+    ],
+    "dependsOn": [
+      10
+    ],
+    "id": 15,
+    "labels": [
+      "items"
+    ],
+    "title": "User Story 11, Change Item's Active Status"
+  }
+]
