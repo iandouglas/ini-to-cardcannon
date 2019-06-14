@@ -83,7 +83,8 @@ def get_titles_by_slug(slug):
 
 id = 1
 path = './{}/'.format(project)
-for filename in os.listdir(path):
+files = sorted(os.listdir(path))
+for filename in files:
     if filename not in EXCLUDED and re.match(".+.ini", filename):
         config = ConfigParser.RawConfigParser()
         config.read('{}/{}'.format(project,filename))
