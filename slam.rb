@@ -16,8 +16,10 @@ if debug_http
   end
   Octokit.middleware = stack
 end
+# brian zanti
+personal_access_token = 'ee751eca945ba058ff0f6a83391765a661b05eaf'
 # iandouglas
-personal_access_token = '0c655f9f45e0e6e00ebec38e12bae8847d49b901'
+personal_access_token = '5b72512670f3e2b558bd7ab69ad99b75d12594c3'
 @client = Octokit::Client.new(:access_token => personal_access_token)
 
 user = @client.user
